@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
+<meta name="theme-color" content="#7B1D3A">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Southern Star">
+<meta name="description" content="BIS HUID Certified Gold & Diamond Jewellery. 37+ Years Trust. Delhi.">
+<title>Southern Star Jewellery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@400;700;900&family=Nunito+Sans:wght@300;400;600;700;800&display=swap">
+<script>
+(function(){try{
+  var m={name:"Southern Star Jewellery",short_name:"S.Star",start_url:"./",display:"standalone",
+    orientation:"portrait-primary",theme_color:"#7B1D3A",background_color:"#FFFBF3",
+    icons:[{src:"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='38' fill='%237B1D3A'/%3E%3Ctext x='50%25' y='57%25' dominant-baseline='middle' text-anchor='middle' font-size='120' fill='%23C8960C'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E",sizes:"192x192",type:"image/svg+xml",purpose:"any maskable"},
+    {src:"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%237B1D3A'/%3E%3Ctext x='50%25' y='57%25' dominant-baseline='middle' text-anchor='middle' font-size='320' fill='%23C8960C'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E",sizes:"512x512",type:"image/svg+xml",purpose:"any maskable"}]};
+  var b=new Blob([JSON.stringify(m)],{type:'application/manifest+json'});
+  var l=document.createElement('link');l.rel='manifest';l.href=URL.createObjectURL(b);
+  document.head.appendChild(l);
+}catch(e){}})();
+</script>
+<style>
+:root{
+  --gold:#C8960C;--gold-l:#F0C842;--gold-d:#8B6504;--gold-pale:#FDF5DC;
+  --burg:#7B1D3A;--burg-l:#A3274D;--burg-d:#4E0E22;
+  --cream:#FFFBF3;--ivory:#F5EDD8;--warm:#FEFCF7;
+  --ink:#1A1208;--body:#3D2E1A;--muted:#7A6248;--light:#B09A78;
+  --bdr:rgba(200,150,12,.15);--bdr-m:rgba(200,150,12,.32);
+  --up:#1A6B3A;--dn:#A01B1B;
+  --fh:'Playfair Display',Georgia,serif;
+  --fd:'Cinzel',Georgia,serif;
+  --fb:'Nunito Sans','Segoe UI',system-ui,sans-serif;
+  --ease:cubic-bezier(.25,.46,.45,.94);
+  --spring:cubic-bezier(.34,1.56,.64,1);
+  --r:16px;--r-s:10px;
+  --nav-h:64px;--ticker-h:30px;--topbar-h:58px;
+  --header-h:calc(var(--ticker-h) + var(--topbar-h));
+  --safe-b:env(safe-area-inset-bottom,0px);
+  --safe-t:env(safe-area-inset-top,0px);
+  --safe-l:env(safe-area-inset-left,0px);
+  --safe-r:env(safe-area-inset-right,0px);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:var(--fb);background:var(--cream);color:var(--body);overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-bottom:calc(var(--nav-h) + var(--safe-b));padding-left:var(--safe-l);padding-right:var(--safe-r)}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%;height:auto}
+button,select,input,textarea{font-family:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:4px}
+::-webkit-scrollbar{width:0;height:0}
+
+/* SPLASH */
+#splash{position:fixed;inset:0;z-index:9999;background:linear-gradient(160deg,var(--burg-d) 0%,var(--burg) 55%,#C8960C 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;transition:opacity .55s,transform .55s}
+#splash.out{opacity:0;transform:scale(1.05);pointer-events:none}
+#splash.gone{display:none}
+.spl-icon{font-size:3.8rem;animation:splP 1.8s ease-in-out infinite}
+@keyframes splP{0%,100%{transform:scale(1)}50%{transform:scale(1.14) rotate(6deg)}}
+.spl-brand{font-family:var(--fd);font-size:1.4rem;font-weight:900;letter-spacing:.28em;background:linear-gradient(135deg,#FFD700,var(--gold-l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-align:center;text-transform:uppercase}
+.spl-sub{font-size:.6rem;letter-spacing:.3em;color:rgba(255,255,255,.5);text-transform:uppercase}
+.spl-bar-wrap{width:54px;height:3px;background:rgba(255,255,255,.14);border-radius:2px;overflow:hidden}
+.spl-bar{height:100%;background:linear-gradient(90deg,var(--gold-l),var(--gold));width:0;animation:splB 2.2s ease forwards}
+@keyframes splB{to{width:100%}}
+
+/* LOGIN SCREEN */
+#loginScreen{position:fixed;inset:0;z-index:8000;background:linear-gradient(170deg,var(--burg-d),var(--burg) 55%,#9A3020 85%,#C8960C 100%);display:flex;flex-direction:column;align-items:center;overflow-y:auto;padding-top:var(--safe-t)}
+#loginScreen.gone{display:none}
+.login-top{text-align:center;padding:36px 24px 26px}
+.login-gem{font-size:3rem;display:block;margin-bottom:10px}
+.login-brand{font-family:var(--fd);font-size:1.3rem;font-weight:900;letter-spacing:.26em;background:linear-gradient(135deg,#FFD700,var(--gold-l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-transform:uppercase;display:block;margin-bottom:3px}
+.login-sub-text{font-size:.6rem;color:rgba(255,255,255,.5);letter-spacing:.2em;text-transform:uppercase}
+.login-card{background:var(--cream);border-radius:28px 28px 0 0;flex:1;width:100%;padding:26px 20px 40px;min-height:72vh}
+.login-title{font-family:var(--fh);font-size:1.2rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.login-hint{font-size:.72rem;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.lf{display:flex;flex-direction:column;gap:13px}
+.lf-grp{display:flex;flex-direction:column}
+.lf-lbl{font-size:.63rem;font-weight:700;letter-spacing:.07em;color:var(--muted);text-transform:uppercase;margin-bottom:5px}
+.lf-inp{width:100%;padding:14px 16px;min-height:50px;font-size:16px;background:var(--ivory);border:1.5px solid var(--bdr);border-radius:var(--r-s);color:var(--ink);-webkit-appearance:none;transition:border-color .2s}
+.lf-inp:focus{border-color:var(--gold);outline:none;background:#fff}
+.mpin-label{font-size:.63rem;font-weight:700;letter-spacing:.07em;color:var(--muted);text-transform:uppercase;text-align:center;margin:4px 0 10px}
+.mpin-dots{display:flex;justify-content:center;gap:14px;margin-bottom:18px}
+.mpin-dot{width:18px;height:18px;border-radius:50%;border:2px solid var(--bdr-m);background:transparent;transition:all .18s}
+.mpin-dot.filled{background:var(--gold);border-color:var(--gold)}
+.mpin-dot.error{background:var(--dn);border-color:var(--dn);animation:shake .3s ease}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.pin-pad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:280px;margin:0 auto}
+.pin-key{min-height:56px;background:var(--ivory);border:1.5px solid var(--bdr);border-radius:14px;font-size:1.25rem;font-weight:700;color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:all .15s var(--spring);user-select:none;-webkit-user-select:none}
+.pin-key:active{transform:scale(.88);background:var(--gold-pale);border-color:var(--gold)}
+.pin-key.zero{grid-column:2}
+.pin-key.del{background:rgba(123,29,58,.08);border-color:rgba(123,29,58,.2);color:var(--burg);font-size:.9rem}
+.pin-sub{font-size:.44rem;color:var(--muted);letter-spacing:.05em;margin-top:1px;font-weight:600}
+.login-btn{width:100%;padding:15px;min-height:50px;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);border:none;border-radius:100px;font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;box-shadow:0 7px 24px rgba(200,150,12,.42);transition:transform .2s;margin-top:8px}
+.login-btn:active{transform:scale(.96)}
+.login-switch{text-align:center;font-size:.72rem;color:var(--muted);margin-top:14px}
+.login-switch a{color:var(--burg);font-weight:700;cursor:pointer;text-decoration:underline}
+.login-err{background:rgba(160,27,27,.1);border:1px solid rgba(160,27,27,.3);border-radius:var(--r-s);padding:9px 13px;font-size:.7rem;color:var(--dn);text-align:center;display:none;margin:4px 0}
+.login-err.show{display:block}
+
+/* TICKER */
+.ticker{background:linear-gradient(135deg,var(--burg-d),#6B1830 50%,var(--burg-d));border-bottom:2px solid var(--gold);overflow:hidden;position:sticky;top:0;z-index:820;height:var(--ticker-h)}
+.ticker-track{display:flex;white-space:nowrap;animation:tick 44s linear infinite;will-change:transform}
+.ticker.paused .ticker-track{animation-play-state:paused}
+.t-seg{display:inline-flex;align-items:center;gap:6px;padding:7px 24px;font-size:.62rem;letter-spacing:.05em;color:rgba(255,255,255,.76);font-weight:500}
+.t-seg b{color:var(--gold-l);font-weight:700}
+.t-pip{width:5px;height:5px;border-radius:50%;background:var(--gold-l);flex-shrink:0;animation:pip 2s infinite}
+@keyframes tick{to{transform:translateX(-50%)}}
+@keyframes pip{0%,100%{opacity:1;box-shadow:0 0 6px var(--gold-l)}50%{opacity:.15}}
+
+/* TOP BAR */
+.top-bar{position:sticky;top:var(--ticker-h);z-index:810;background:rgba(255,251,243,.97);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-bottom:1.5px solid var(--bdr-m);box-shadow:0 2px 18px rgba(200,150,12,.15);height:var(--topbar-h)}
+.top-bar-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;height:100%;gap:8px}
+.top-logo{display:flex;flex-direction:column;gap:1px;cursor:pointer;user-select:none}
+.top-logo-n{font-family:var(--fd);font-size:.76rem;letter-spacing:.22em;font-weight:900;color:var(--gold-d);line-height:1}
+.top-logo-s{font-size:.48rem;letter-spacing:.12em;color:var(--light);font-style:italic}
+.top-actions{display:flex;align-items:center;gap:2px}
+.tba{min-width:42px;min-height:42px;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:1.1rem;transition:background .18s;position:relative;color:var(--body);text-decoration:none}
+.tba:active{background:var(--gold-pale)}
+.cart-badge{position:absolute;top:4px;right:4px;background:var(--burg);color:#fff;width:17px;height:17px;border-radius:50%;font-size:.5rem;font-weight:800;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--cream);pointer-events:none;transition:transform .28s var(--spring)}
+.cart-badge.bump{transform:scale(1.65)}
+.user-av{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-weight:900;font-size:.78rem;color:var(--ink);cursor:pointer;border:2px solid var(--gold-d);flex-shrink:0}
+
+/* SCREENS */
+.screen{display:none}
+.screen.active{display:block;animation:fadeUp .25s var(--ease) both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.screen-pad{padding-bottom:calc(var(--nav-h) + var(--safe-b) + 16px)}
+
+/* BOTTOM NAV */
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:900;background:rgba(255,251,243,.97);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);border-top:1.5px solid var(--bdr-m);box-shadow:0 -4px 28px rgba(58,46,26,.1);padding-bottom:var(--safe-b)}
+.bnav-inner{display:flex;height:var(--nav-h);align-items:stretch}
+.bn-item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border:none;background:none;cursor:pointer;padding:4px 2px;color:var(--light);transition:color .2s;position:relative}
+.bn-item::after{content:'';position:absolute;inset:6px 10px;background:var(--gold-pale);border-radius:12px;opacity:0;transition:opacity .2s;pointer-events:none}
+.bn-item.active::after{opacity:1}
+.bn-item.active{color:var(--burg)}
+.bn-icon{font-size:1.3rem;line-height:1;position:relative;z-index:1;transition:transform .2s var(--spring)}
+.bn-item.active .bn-icon{transform:scale(1.18) translateY(-2px)}
+.bn-label{font-size:.52rem;letter-spacing:.05em;font-weight:700;text-transform:uppercase;position:relative;z-index:1;line-height:1}
+
+/* HERO */
+.hero-card{background:linear-gradient(145deg,#3A0A1A,#7B1D3A 55%,#9A3020 80%,#C8960C);margin:12px;border-radius:20px;overflow:hidden;position:relative;min-height:62vw;max-height:310px;display:flex;align-items:flex-end;box-shadow:0 16px 50px rgba(78,14,34,.44)}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.2;filter:contrast(1.1)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(26,4,14,.94),rgba(78,14,34,.35) 52%,transparent)}
+.hero-body{position:relative;z-index:5;padding:16px 18px 20px}
+.hero-ey{font-size:.56rem;letter-spacing:.34em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px;font-weight:600}
+.hero-h1{font-family:var(--fh);font-size:clamp(1.35rem,5.4vw,2rem);font-weight:700;color:#fff;line-height:1.1;margin-bottom:8px}
+.hero-h1 em{color:var(--gold-l);font-style:italic}
+.hero-h1 .brand{display:block;font-family:var(--fd);font-size:.5em;font-weight:900;letter-spacing:.24em;background:linear-gradient(135deg,#FFD700,var(--gold-l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:4px;text-transform:uppercase}
+.hero-sub{font-size:.72rem;color:rgba(255,255,255,.62);line-height:1.65;margin-bottom:14px;max-width:280px}
+.hero-btns{display:flex;gap:8px;flex-wrap:wrap}
+.btn-cta{display:inline-flex;align-items:center;gap:6px;padding:11px 18px;min-height:42px;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);font-size:.66rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;border:none;border-radius:100px;cursor:pointer;box-shadow:0 6px 20px rgba(200,150,12,.48);transition:transform .2s}
+.btn-cta:active{transform:scale(.95)}
+.btn-out{display:inline-flex;align-items:center;gap:6px;padding:11px 18px;min-height:42px;background:rgba(255,255,255,.1);color:#fff;font-size:.66rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;border:1.5px solid rgba(255,255,255,.38);border-radius:100px;cursor:pointer;transition:background .2s}
+.btn-out:active{background:rgba(255,255,255,.2)}
+.kpi-strip{display:flex;justify-content:space-around;margin:0 12px;background:var(--warm);border-radius:0 0 16px 16px;padding:12px 6px;border:1px solid var(--bdr);border-top:none;box-shadow:0 6px 22px rgba(58,46,26,.06)}
+.kpi{text-align:center;flex:1}
+.kpi-v{font-family:var(--fd);font-size:1.18rem;font-weight:900;color:var(--gold-d);line-height:1}
+.kpi-l{font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:3px;font-weight:600}
+
+/* Section titles */
+.sec-title{display:flex;align-items:center;gap:10px;padding:20px 14px 9px}
+.sec-line{width:24px;height:2px;background:var(--gold);border-radius:1px;flex-shrink:0}
+.sec-text{font-family:var(--fh);font-size:1.02rem;font-weight:600;color:var(--ink)}
+.sec-badge{margin-left:auto;display:flex;align-items:center;gap:4px;background:rgba(74,222,128,.12);padding:3px 9px;border-radius:20px;font-size:.57rem;font-weight:700;color:#1A6B3A;letter-spacing:.05em;text-transform:uppercase}
+.live-dot{width:5px;height:5px;border-radius:50%;background:#4ADE80;box-shadow:0 0 5px #4ADE80;animation:pip 1.5s infinite}
+
+/* Quick actions */
+.qa-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;padding:0 14px}
+.qa-item{background:var(--warm);border-radius:13px;padding:12px 5px;text-align:center;border:1px solid var(--bdr);cursor:pointer;transition:transform .18s,background .18s}
+.qa-item:active{transform:scale(.9);background:var(--gold-pale)}
+.qa-icon{font-size:1.35rem;margin-bottom:4px}
+.qa-label{font-size:.54rem;font-weight:700;color:var(--body);line-height:1.3}
+
+/* Rate chips */
+.h-scroll{padding:0 14px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.h-scroll::-webkit-scrollbar{display:none}
+.h-row{display:flex;gap:9px;padding-bottom:2px}
+.rate-chip{background:linear-gradient(145deg,var(--burg-d),var(--burg));border-radius:13px;padding:14px 16px;min-width:120px;flex-shrink:0;box-shadow:0 4px 16px rgba(78,14,34,.24);border:1px solid rgba(200,150,12,.2);cursor:default;position:relative;overflow:hidden}
+.rate-chip::before{content:'';position:absolute;top:-26px;right:-16px;width:70px;height:70px;border-radius:50%;background:rgba(200,150,12,.09)}
+.rc-metal{font-size:.54rem;letter-spacing:.17em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:700;margin-bottom:6px}
+.rc-val{font-family:var(--fd);font-size:1.22rem;font-weight:900;color:#fff;line-height:1}
+.rc-unit{font-size:.52rem;color:rgba(255,255,255,.36);margin-top:3px}
+
+/* Why + Testimonials */
+.why-chip{background:var(--warm);border-radius:13px;padding:14px 12px;min-width:138px;flex-shrink:0;border:1px solid var(--bdr)}
+.why-ic{font-size:1.35rem;margin-bottom:6px}
+.why-t{font-family:var(--fh);font-size:.83rem;font-weight:700;color:var(--ink);margin-bottom:2px;line-height:1.25}
+.why-d{font-size:.64rem;color:var(--muted);line-height:1.55}
+.testi-card{background:var(--warm);border-radius:16px;padding:16px;min-width:264px;flex-shrink:0;border:1px solid var(--bdr)}
+.tc-stars{font-size:.78rem;letter-spacing:2px;margin-bottom:8px}
+.tc-q{font-family:var(--fh);font-size:2rem;color:var(--gold-l);line-height:.42;margin-bottom:6px;display:block}
+.tc-text{font-size:.73rem;color:var(--body);line-height:1.68;margin-bottom:10px;font-style:italic}
+.tc-person{display:flex;align-items:center;gap:8px}
+.tc-av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--burg),var(--burg-l));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-weight:900;font-size:.85rem;color:#fff;flex-shrink:0}
+.tc-name{font-weight:700;font-size:.78rem;color:var(--ink)}
+.tc-buy{font-size:.58rem;color:var(--muted);margin-top:1px}
+
+/* Page header */
+.page-header{background:linear-gradient(135deg,var(--burg-d),var(--burg));padding:20px 14px 18px;position:relative;overflow:hidden}
+.page-header::after{content:'';position:absolute;top:-36px;right:-18px;width:140px;height:140px;border-radius:50%;background:rgba(200,150,12,.08)}
+.ph-ey{font-size:.54rem;letter-spacing:.34em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:4px;font-weight:600}
+.ph-title{font-family:var(--fh);font-size:1.38rem;font-weight:700;color:#fff;position:relative;z-index:1;line-height:1.2}
+.ph-title em{color:var(--gold-l);font-style:italic}
+.ph-sub{font-size:.7rem;color:rgba(255,255,255,.58);margin-top:4px;line-height:1.65;position:relative;z-index:1}
+
+/* COLLECTIONS */
+.filter-bar{display:flex;gap:6px;padding:11px 14px;overflow-x:auto;-webkit-overflow-scrolling:touch;position:sticky;top:var(--header-h);z-index:600;background:var(--cream);border-bottom:1px solid var(--bdr)}
+.filter-bar::-webkit-scrollbar{display:none}
+.filter-btn{flex-shrink:0;padding:7px 14px;min-height:33px;background:transparent;border:1.5px solid var(--bdr-m);color:var(--muted);font-size:.64rem;letter-spacing:.09em;text-transform:uppercase;cursor:pointer;border-radius:100px;font-weight:700;white-space:nowrap;transition:all .22s}
+.filter-btn.active{background:linear-gradient(135deg,var(--gold-l),var(--gold));border-color:var(--gold);color:var(--ink);box-shadow:0 3px 12px rgba(200,150,12,.3)}
+.prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;padding:11px 11px 20px}
+.prod-card{background:var(--warm);border-radius:var(--r);overflow:hidden;box-shadow:0 3px 14px rgba(58,46,26,.08);border:1px solid var(--bdr);cursor:pointer;transition:transform .2s}
+.prod-card:active{transform:scale(.96)}
+.prod-img{position:relative;aspect-ratio:.82;overflow:hidden}
+.prod-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.prod-card:active .prod-img img{transform:scale(1.04)}
+.prod-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,18,8,.88),rgba(26,18,8,.06) 42%,transparent)}
+.prod-badges{position:absolute;top:8px;left:8px;z-index:5;display:flex;flex-direction:column;gap:3px}
+.bdg{display:inline-block;padding:2px 6px;font-size:.48rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;border-radius:4px}
+.bdg-f{background:var(--gold);color:var(--ink)}.bdg-n{background:var(--burg);color:#fff}.bdg-h{background:rgba(255,255,255,.9);color:var(--burg-d);font-size:.46rem}
+.prod-quick{position:absolute;top:8px;right:8px;z-index:5;display:flex;flex-direction:column;gap:4px}
+.qbtn{width:34px;height:34px;background:rgba(255,255,255,.92);border:none;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.78rem;box-shadow:0 2px 8px rgba(0,0,0,.14);transition:all .16s}
+.qbtn:active{background:var(--gold);transform:scale(.86)}
+.prod-info{position:absolute;bottom:0;left:0;right:0;padding:10px;z-index:5}
+.prod-cat{font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-l);margin-bottom:2px;font-weight:800}
+.prod-name{font-family:var(--fh);font-size:.85rem;font-weight:600;color:#fff;margin-bottom:2px;line-height:1.2}
+.prod-meta{font-size:.54rem;color:rgba(255,255,255,.5);margin-bottom:6px}
+.prod-row{display:flex;justify-content:space-between;align-items:center}
+.prod-price{font-family:var(--fd);font-size:.82rem;font-weight:700;color:var(--gold-l)}
+.prod-price small{font-size:.46rem;color:rgba(255,255,255,.36);font-weight:400;display:block}
+.prod-add-btn{background:linear-gradient(135deg,var(--gold),var(--gold-d));color:var(--ink);border:none;border-radius:100px;padding:5px 10px;font-size:.54rem;font-weight:800;cursor:pointer;transition:transform .16s;flex-shrink:0}
+.prod-add-btn:active{transform:scale(.86)}
+.s-on{color:var(--gold-l);font-size:.58rem}.s-off{color:rgba(255,255,255,.18);font-size:.58rem}
+
+/* SCHEMES */
+.sch-list{display:flex;flex-direction:column;margin:0 12px}
+.sch-item{background:var(--warm);padding:15px 13px;cursor:pointer;border:1px solid var(--bdr);border-top:none;display:flex;justify-content:space-between;align-items:center;position:relative;overflow:hidden;transition:background .2s}
+.sch-item:first-child{border-top:1px solid var(--bdr);border-radius:var(--r) var(--r) 0 0}
+.sch-item:last-child{border-radius:0 0 var(--r) var(--r)}
+.sch-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:transparent;transition:background .2s}
+.sch-item.active::before{background:var(--gold)}
+.sch-item.active{background:linear-gradient(90deg,var(--gold-pale),var(--warm))}
+.sch-name{font-family:var(--fh);font-size:.93rem;font-weight:700;color:var(--ink);margin-bottom:2px}
+.sch-desc{font-size:.63rem;color:var(--muted);line-height:1.5}
+.sch-arr{font-size:.95rem;color:var(--light);flex-shrink:0;transition:transform .2s}
+.sch-item.active .sch-arr{transform:rotate(90deg);color:var(--gold)}
+.sch-detail{background:linear-gradient(135deg,var(--gold-pale),var(--ivory));border:1px solid var(--bdr-m);border-top:none;padding:13px;margin:0 12px;display:none}
+.sch-detail.show{display:block;animation:fadeUp .2s var(--ease)}
+.sd-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:9px}
+.sd-tag{display:inline-flex;align-items:center;gap:3px;background:rgba(200,150,12,.1);border:1px solid var(--bdr-m);border-radius:100px;padding:3px 9px;font-size:.6rem;font-weight:700;color:var(--gold-d)}
+.calc-card{background:var(--warm);border-radius:var(--r);margin:12px;padding:16px;border:1px solid var(--bdr);box-shadow:0 4px 18px rgba(58,46,26,.06)}
+.calc-card h3{font-family:var(--fh);font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:3px}
+.calc-sub{font-size:.68rem;color:var(--muted);margin-bottom:14px}
+.cf{margin-bottom:11px}
+.cl{display:block;font-size:.63rem;font-weight:700;letter-spacing:.05em;color:var(--muted);margin-bottom:5px;text-transform:uppercase}
+.ci,.cs{width:100%;padding:12px 14px;min-height:46px;font-size:16px;background:var(--cream);border:1.5px solid var(--bdr);border-radius:var(--r-s);color:var(--ink);transition:border-color .2s;-webkit-appearance:none;appearance:none}
+.ci:focus,.cs:focus{border-color:var(--gold);outline:none;background:#fff}
+.ci[readonly]{background:var(--ivory);cursor:not-allowed}
+.calc-btn{width:100%;padding:14px;min-height:48px;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;border:none;border-radius:100px;cursor:pointer;box-shadow:0 6px 22px rgba(200,150,12,.36);transition:transform .2s;margin-top:4px}
+.calc-btn:active{transform:scale(.96)}
+.calc-res{margin-top:14px;background:linear-gradient(135deg,var(--gold-pale),var(--ivory));border-radius:var(--r-s);padding:14px;border:1px solid var(--bdr-m);display:none}
+.calc-res.show{display:block;animation:fadeUp .2s var(--ease)}
+.rr{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--bdr)}
+.rr:last-child{border-bottom:none}
+.rl{font-size:.68rem;color:var(--muted);font-weight:500}
+.rv{font-family:var(--fd);font-size:.88rem;font-weight:700;color:var(--ink)}
+.rv.bonus{color:var(--up)}
+.total-row .rl{font-weight:800;color:var(--body)}
+.total-row .rv{color:var(--gold-d);font-size:.96rem}
+.sv-add-btn{padding:12px 14px;min-height:46px;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);border:none;border-radius:var(--r-s);font-weight:800;font-size:.74rem;cursor:pointer;letter-spacing:.06em;transition:transform .17s;white-space:nowrap}
+.sv-add-btn:active{transform:scale(.93)}
+.sv-tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--r-s);border:1px solid var(--bdr)}
+.sv-tbl{width:100%;border-collapse:collapse;font-size:.66rem;min-width:360px}
+.sv-tbl th{background:var(--ivory);padding:8px 9px;text-align:left;font-weight:700;color:var(--muted);font-size:.56rem;text-transform:uppercase}
+.sv-tbl td{padding:8px 9px;border-top:1px solid var(--bdr);color:var(--body)}
+.sv-tbl tr:nth-child(even) td{background:rgba(200,150,12,.03)}
+
+/* SHOWROOMS */
+.showroom-card{background:var(--warm);border-radius:16px;margin:0 12px 11px;padding:16px;border:1px solid var(--bdr);box-shadow:0 3px 14px rgba(58,46,26,.06);position:relative;overflow:hidden}
+.showroom-card.flagship{border-color:var(--gold);background:linear-gradient(145deg,var(--warm),var(--gold-pale))}
+.showroom-card::before{content:'';position:absolute;top:-34px;right:-24px;width:100px;height:100px;border-radius:50%;background:rgba(200,150,12,.05)}
+.s-badge{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;border-radius:100px;font-size:.53rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;margin-bottom:8px;background:var(--gold-pale);color:var(--gold-d);border:1px solid var(--bdr-m)}
+.s-name{font-family:var(--fh);font-size:1.1rem;font-weight:700;color:var(--ink);margin-bottom:10px}
+.s-facts{list-style:none;display:flex;flex-direction:column;gap:8px}
+.s-fact{display:flex;gap:8px;align-items:flex-start}
+.s-ic{flex-shrink:0;font-size:.9rem;width:18px;text-align:center;margin-top:1px}
+.s-txt{font-size:.7rem;color:var(--body);line-height:1.55}
+.s-txt a{color:var(--burg);font-weight:700}
+.dir-btn{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:13px;width:100%;padding:12px;min-height:46px;background:linear-gradient(135deg,var(--burg),var(--burg-l));color:#fff;border:none;border-radius:100px;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;box-shadow:0 4px 16px rgba(78,14,34,.26);text-decoration:none;transition:transform .18s}
+.dir-btn:active{transform:scale(.96)}
+.call-btn{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:7px;width:100%;padding:12px;min-height:46px;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);border:none;border-radius:100px;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:transform .18s}
+.call-btn:active{transform:scale(.96)}
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:7px;width:100%;padding:12px;min-height:46px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border:none;border-radius:100px;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:transform .18s}
+.wa-btn:active{transform:scale(.96)}
+
+/* APPOINTMENT */
+.appt-form{padding:0 12px 20px;display:flex;flex-direction:column;gap:11px}
+.ff{display:flex;flex-direction:column}
+.fl{font-size:.63rem;font-weight:700;letter-spacing:.05em;color:var(--muted);margin-bottom:5px;text-transform:uppercase}
+.fi,.fs{width:100%;padding:13px 14px;min-height:48px;font-size:16px;background:var(--warm);border:1.5px solid var(--bdr);border-radius:var(--r-s);color:var(--ink);-webkit-appearance:none;appearance:none;transition:border-color .2s}
+.fi:focus,.fs:focus{border-color:var(--gold);outline:none;background:#fff}
+.fta{width:100%;padding:13px 14px;background:var(--warm);border:1.5px solid var(--bdr);border-radius:var(--r-s);color:var(--ink);font-size:16px;min-height:86px;resize:vertical;transition:border-color .2s;line-height:1.55}
+.fta:focus{border-color:var(--gold);outline:none;background:#fff}
+.slots-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:5px}
+.slot-btn{padding:8px 4px;background:var(--cream);border:1.5px solid var(--bdr);border-radius:var(--r-s);font-size:.63rem;font-weight:700;color:var(--muted);cursor:pointer;text-align:center;transition:all .18s;min-height:38px}
+.slot-btn.sel{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.form-note{font-size:.6rem;color:var(--muted);line-height:1.65}
+.appt-submit{width:100%;padding:15px;min-height:52px;background:linear-gradient(135deg,var(--burg),var(--burg-l));color:#fff;border:none;border-radius:100px;font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 28px rgba(78,14,34,.36);transition:transform .2s}
+.appt-submit:active{transform:scale(.96)}
+
+/* CART + MODAL */
+.cart-overlay,.modal-overlay,.profile-overlay,.admin-overlay{position:fixed;inset:0;background:rgba(26,18,8,.54);z-index:1000;opacity:0;pointer-events:none;transition:opacity .28s;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.cart-overlay.open,.modal-overlay.open,.profile-overlay.open{opacity:1;pointer-events:auto}
+.cart-drawer,.modal-sheet,.profile-sheet{position:fixed;bottom:0;left:0;right:0;background:var(--cream);border-radius:22px 22px 0 0;box-shadow:0 -16px 50px rgba(26,18,8,.2);transform:translateY(100%);transition:transform .34s var(--ease);padding-bottom:calc(var(--safe-b) + 14px);will-change:transform}
+.cart-drawer{z-index:1001;max-height:82vh;display:flex;flex-direction:column}
+.cart-drawer.open,.modal-sheet.open,.profile-sheet.open{transform:translateY(0)}
+.modal-sheet{z-index:1101;max-height:92vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.modal-overlay{z-index:1100}
+.profile-sheet{z-index:1201}
+.profile-overlay{z-index:1200}
+.cart-handle,.modal-handle{width:38px;height:4px;background:var(--bdr-m);border-radius:2px;margin:10px auto 0;flex-shrink:0}
+.cart-header{display:flex;justify-content:space-between;align-items:center;padding:11px 16px;border-bottom:1px solid var(--bdr);flex-shrink:0}
+.cart-header h3{font-family:var(--fh);font-size:1rem;font-weight:700;color:var(--ink)}
+.cart-close{background:none;border:none;font-size:1.25rem;cursor:pointer;color:var(--muted);min-width:42px;min-height:42px;display:flex;align-items:center;justify-content:center;border-radius:50%}
+.cart-items{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:8px 12px}
+.cart-empty{text-align:center;padding:34px 18px;color:var(--muted)}
+.ce-icon{font-size:2.6rem;margin-bottom:9px}
+.cart-item{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--bdr)}
+.cart-item:last-child{border-bottom:none}
+.ci-img{width:58px;height:72px;border-radius:8px;overflow:hidden;flex-shrink:0;background:var(--ivory)}
+.ci-img img{width:100%;height:100%;object-fit:cover}
+.ci-body{flex:1;min-width:0}
+.ci-name{font-family:var(--fh);font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:2px;line-height:1.26}
+.ci-meta{font-size:.58rem;color:var(--muted);margin-bottom:4px}
+.ci-price{font-family:var(--fd);font-size:.86rem;font-weight:700;color:var(--gold-d)}
+.ci-rm{background:none;border:none;font-size:.84rem;cursor:pointer;color:var(--dn);min-width:34px;min-height:34px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:background .16s;flex-shrink:0}
+.ci-rm:active{background:rgba(160,27,27,.1)}
+.cart-foot{padding:12px;border-top:1px solid var(--bdr);flex-shrink:0}
+.cart-note{font-size:.6rem;color:var(--muted);margin-bottom:8px;line-height:1.55;text-align:center}
+.cart-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:11px;padding:8px 12px;background:var(--gold-pale);border-radius:var(--r-s);border:1px solid var(--bdr-m)}
+.ct-label{font-size:.74rem;font-weight:700;color:var(--body)}
+.ct-val{font-family:var(--fd);font-size:.98rem;font-weight:900;color:var(--gold-d)}
+.cart-checkout{width:100%;padding:14px;min-height:50px;background:linear-gradient(135deg,var(--burg),var(--burg-l));color:#fff;border:none;border-radius:100px;font-size:.74rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;box-shadow:0 6px 20px rgba(78,14,34,.3);transition:transform .18s}
+.cart-checkout:active{transform:scale(.96)}
+.modal-img{width:100%;aspect-ratio:1;object-fit:cover}
+.modal-close-btn{position:sticky;top:0;z-index:10;background:rgba(255,251,243,.96);border:none;padding:13px 16px;display:flex;align-items:center;gap:6px;font-size:.74rem;font-weight:700;color:var(--muted);cursor:pointer;width:100%;border-bottom:1px solid var(--bdr);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.modal-body{padding:16px}
+.modal-cat{font-size:.56rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-d);font-weight:800;margin-bottom:4px}
+.modal-name{font-family:var(--fh);font-size:1.3rem;font-weight:700;color:var(--ink);margin-bottom:6px;line-height:1.18}
+.modal-desc{font-size:.78rem;color:var(--muted);line-height:1.72;margin-bottom:12px}
+.ms-on{color:var(--gold);font-size:.8rem}.ms-off{color:var(--bdr-m);font-size:.8rem}
+.modal-price{font-family:var(--fd);font-size:1.4rem;font-weight:900;color:var(--gold-d);margin-bottom:4px}
+.modal-price small{font-size:.56rem;color:var(--muted);font-weight:400}
+.price-bd{background:var(--ivory);border-radius:var(--r-s);padding:12px;margin-bottom:13px;border:1px solid var(--bdr)}
+.pb-row{display:flex;justify-content:space-between;font-size:.66rem;padding:3px 0;border-bottom:1px solid var(--bdr);color:var(--body)}
+.pb-row:last-child{border-bottom:none;font-weight:800;color:var(--ink);font-size:.72rem}
+.huid-row{display:flex;align-items:center;gap:6px;padding:8px 12px;background:rgba(74,222,128,.1);border-radius:var(--r-s);border:1px solid rgba(74,222,128,.2);margin-bottom:13px}
+.huid-text{font-size:.66rem;color:var(--up);font-weight:700}
+.modal-actions{display:flex;flex-direction:column;gap:8px}
+.modal-add{width:100%;padding:14px;min-height:50px;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);border:none;border-radius:100px;font-size:.74rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;box-shadow:0 6px 20px rgba(200,150,12,.36);transition:transform .18s}
+.modal-add:active{transform:scale(.96)}
+.modal-wa{width:100%;padding:14px;min-height:50px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border:none;border-radius:100px;font-size:.74rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:transform .18s}
+.modal-wa:active{transform:scale(.96)}
+
+/* TOAST */
+.toast{position:fixed;bottom:calc(var(--nav-h) + var(--safe-b) + 66px);left:50%;transform:translateX(-50%) translateY(16px);background:rgba(26,18,8,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#fff;padding:11px 20px;border-radius:100px;font-size:.74rem;font-weight:600;opacity:0;pointer-events:none;transition:opacity .28s,transform .28s;z-index:2000;border:1px solid rgba(200,150,12,.26);max-width:88vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* WA FLOAT */
+.wa-float{position:fixed;bottom:calc(var(--nav-h) + var(--safe-b) + 13px);right:14px;width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#25D366,#128C7E);display:flex;align-items:center;justify-content:center;font-size:1.35rem;box-shadow:0 4px 20px rgba(18,140,126,.4);z-index:600;border:none;cursor:pointer;transition:transform .2s var(--spring);text-decoration:none}
+.wa-float:active{transform:scale(.88)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .44s var(--ease),transform .44s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* PROFILE SHEET */
+.psh-handle{width:38px;height:4px;background:var(--bdr-m);border-radius:2px;margin:10px auto 0}
+.psh-head{display:flex;align-items:center;gap:11px;padding:12px 16px;border-bottom:1px solid var(--bdr)}
+.psh-head h3{font-family:var(--fh);font-size:.98rem;font-weight:700;color:var(--ink);flex:1}
+.p-body{padding:20px 16px}
+.p-av-big{width:66px;height:66px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-weight:900;font-size:1.7rem;color:var(--ink);margin:0 auto 11px;box-shadow:0 4px 16px rgba(200,150,12,.38)}
+.p-name{font-family:var(--fh);font-size:1.08rem;font-weight:700;color:var(--ink);text-align:center}
+.p-mobile{font-size:.74rem;color:var(--muted);text-align:center;margin-bottom:5px}
+.p-since{font-size:.62rem;color:var(--light);text-align:center;margin-bottom:20px}
+.p-btn{width:100%;padding:13px;min-height:48px;border:none;border-radius:100px;font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:transform .18s;margin-bottom:9px}
+.p-btn:active{transform:scale(.96)}
+.p-logout{background:linear-gradient(135deg,var(--burg),var(--burg-l));color:#fff;box-shadow:0 5px 18px rgba(78,14,34,.28)}
+.p-admin{background:linear-gradient(135deg,#1e293b,#334155);color:#fff;box-shadow:0 5px 18px rgba(30,41,59,.28)}
+
+/* ═══ ADMIN PANEL ═══ */
+#adminScreen{position:fixed;inset:0;z-index:7000;background:var(--cream);overflow:hidden;display:none;flex-direction:column}
+#adminScreen.open{display:flex}
+.adm-topbar{background:linear-gradient(135deg,var(--burg-d),var(--burg));padding:calc(var(--safe-t) + 12px) 14px 12px;display:flex;align-items:center;gap:11px;position:sticky;top:0;z-index:10;box-shadow:0 2px 18px rgba(78,14,34,.5);flex-shrink:0}
+.adm-title{font-family:var(--fd);font-size:.84rem;font-weight:900;color:var(--gold-l);letter-spacing:.17em;text-transform:uppercase;flex:1}
+.adm-close{background:rgba(255,255,255,.14);border:none;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.05rem;cursor:pointer;flex-shrink:0}
+.adm-tabs{display:flex;background:var(--warm);border-bottom:2px solid var(--bdr);overflow-x:auto;-webkit-overflow-scrolling:touch;flex-shrink:0;position:sticky;top:0;z-index:9}
+.adm-tabs::-webkit-scrollbar{display:none}
+.adm-tab{flex-shrink:0;padding:11px 16px;font-size:.66rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);border:none;background:none;cursor:pointer;border-bottom:2.5px solid transparent;margin-bottom:-2px;transition:all .18s;white-space:nowrap}
+.adm-tab.active{color:var(--burg);border-bottom-color:var(--burg)}
+.adm-body{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.adm-panel{display:none;padding:14px}
+.adm-panel.active{display:block}
+
+/* Rate editor */
+.rate-editor{background:var(--warm);border-radius:var(--r);border:1px solid var(--bdr);overflow:hidden;margin-bottom:14px}
+.re-head{background:linear-gradient(135deg,var(--burg-d),var(--burg));padding:13px 14px}
+.re-title{font-family:var(--fh);font-size:.95rem;font-weight:700;color:#fff;margin-bottom:2px}
+.re-sub{font-size:.62rem;color:rgba(255,255,255,.58)}
+.re-body{padding:14px;display:flex;flex-direction:column;gap:10px}
+.re-field{display:flex;align-items:center;gap:9px;padding:11px;background:var(--cream);border-radius:var(--r-s);border:1px solid var(--bdr)}
+.re-ic{font-size:1.35rem;flex-shrink:0}
+.re-label{font-size:.7rem;font-weight:700;color:var(--muted);flex:1}
+.re-inp{width:96px;padding:8px 11px;font-size:16px;font-weight:700;background:#fff;border:1.5px solid var(--bdr);border-radius:var(--r-s);color:var(--ink);text-align:right;-webkit-appearance:none;transition:border-color .18s}
+.re-inp:focus{border-color:var(--gold);outline:none}
+.re-unit{font-size:.6rem;color:var(--muted);flex-shrink:0;min-width:22px}
+.re-save-btn{width:100%;padding:15px;min-height:50px;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);border:none;border-radius:100px;font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;box-shadow:0 6px 20px rgba(200,150,12,.36);transition:transform .18s}
+.re-save-btn:active{transform:scale(.96)}
+.re-last{font-size:.62rem;color:var(--muted);text-align:center;margin-top:7px;line-height:1.55}
+
+/* Admin data */
+.adm-stats{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:14px}
+.adm-stat{background:var(--warm);border-radius:var(--r-s);padding:13px;border:1px solid var(--bdr);text-align:center}
+.adm-stat-v{font-family:var(--fd);font-size:1.45rem;font-weight:900;color:var(--gold-d)}
+.adm-stat-l{font-size:.58rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+.adm-search{width:100%;padding:10px 14px;font-size:16px;background:var(--warm);border:1.5px solid var(--bdr);border-radius:100px;color:var(--ink);margin-bottom:11px;-webkit-appearance:none;transition:border-color .18s}
+.adm-search:focus{border-color:var(--gold);outline:none;background:#fff}
+.adm-filter-row{display:flex;gap:6px;margin-bottom:11px;flex-wrap:wrap}
+.af-chip{padding:4px 10px;border-radius:100px;font-size:.59rem;font-weight:700;cursor:pointer;border:1.5px solid var(--bdr-m);background:var(--warm);color:var(--muted);transition:all .16s}
+.af-chip.sel{background:var(--burg);color:#fff;border-color:var(--burg)}
+.data-card{background:var(--warm);border-radius:var(--r-s);border:1px solid var(--bdr);margin-bottom:9px;overflow:hidden}
+.dc-head{padding:11px 13px;background:var(--ivory);display:flex;justify-content:space-between;align-items:flex-start;cursor:pointer}
+.dc-name{font-weight:700;font-size:.86rem;color:var(--ink)}
+.dc-sub{font-size:.6rem;color:var(--muted);margin-top:1px}
+.dc-badge{padding:3px 8px;border-radius:100px;font-size:.53rem;font-weight:800;text-transform:uppercase;background:var(--gold-pale);color:var(--gold-d);border:1px solid var(--bdr-m);white-space:nowrap;flex-shrink:0}
+.dc-badge.new-cust{background:rgba(74,222,128,.14);color:#1A6B3A;border-color:rgba(74,222,128,.3)}
+.dc-badge.pending{background:rgba(255,165,0,.12);color:#b26000;border-color:rgba(255,165,0,.28)}
+.dc-badge.confirmed{background:rgba(74,222,128,.12);color:#1A6B3A;border-color:rgba(74,222,128,.25)}
+.dc-body{padding:11px 13px;display:none;border-top:1px solid var(--bdr)}
+.dc-body.open{display:block}
+.dc-row{display:flex;gap:5px;margin-bottom:5px;font-size:.7rem}
+.dc-key{color:var(--muted);font-weight:600;min-width:76px;flex-shrink:0}
+.dc-val{color:var(--body);font-weight:500;flex:1;word-break:break-word}
+.dc-actions{display:flex;gap:7px;margin-top:9px;flex-wrap:wrap}
+.dc-btn{flex:1;min-width:64px;padding:8px;background:transparent;border:1.5px solid var(--bdr-m);border-radius:100px;font-size:.62rem;font-weight:700;color:var(--muted);cursor:pointer;letter-spacing:.06em;text-transform:uppercase;transition:all .16s;text-align:center;text-decoration:none}
+.dc-btn.call{border-color:rgba(200,150,12,.4);color:var(--gold-d);background:var(--gold-pale)}
+.dc-btn.wa{border-color:#128C7E;color:#128C7E;background:rgba(37,211,102,.07)}
+.dc-btn.del{border-color:rgba(160,27,27,.28);color:var(--dn);background:rgba(160,27,27,.05)}
+.dc-btn.mark{border-color:rgba(74,222,128,.3);color:#1A6B3A;background:rgba(74,222,128,.08)}
+.adm-empty{text-align:center;padding:38px 18px;color:var(--muted);font-size:.82rem}
+
+/* Admin login modal */
+.admin-login-sheet{position:fixed;bottom:0;left:0;right:0;z-index:8500;background:var(--cream);border-radius:22px 22px 0 0;transform:translateY(100%);transition:transform .34s var(--ease);padding:0 0 calc(var(--safe-b) + 14px);box-shadow:0 -16px 50px rgba(26,18,8,.2);will-change:transform}
+.admin-login-sheet.open{transform:translateY(0)}
+.admin-login-overlay{position:fixed;inset:0;z-index:8400;background:rgba(26,18,8,.54);opacity:0;pointer-events:none;transition:opacity .28s;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.admin-login-overlay.open{opacity:1;pointer-events:auto}
+
+/* FOOTER */
+.footer-strip{background:var(--burg-d);padding:18px 14px;text-align:center}
+.footer-brand{font-family:var(--fd);font-size:.86rem;font-weight:900;letter-spacing:.2em;background:linear-gradient(135deg,#FFD700,var(--gold-l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-transform:uppercase;margin-bottom:4px}
+.footer-tag{font-size:.6rem;color:rgba(255,255,255,.46);margin-bottom:11px}
+.footer-links{display:flex;justify-content:center;gap:13px;flex-wrap:wrap;margin-bottom:11px}
+.footer-link{color:var(--gold-l);font-size:.68rem;font-weight:700}
+.footer-copy{font-size:.54rem;color:rgba(255,255,255,.3);line-height:1.65}
+
+/* MPIN Reset flow */
+.reset-info-box{background:rgba(200,150,12,.09);border:1.5px solid var(--bdr-m);border-radius:var(--r-s);padding:14px;margin:10px 0;text-align:center}
+.reset-info-box .ri-icon{font-size:2rem;margin-bottom:7px}
+.reset-info-box .ri-title{font-family:var(--fh);font-size:.93rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.reset-info-box .ri-sub{font-size:.7rem;color:var(--muted);line-height:1.65}
+.reset-temp-box{background:linear-gradient(135deg,rgba(74,222,128,.12),rgba(74,222,128,.06));border:1.5px solid rgba(74,222,128,.3);border-radius:var(--r-s);padding:14px;text-align:center;margin:10px 0}
+.reset-temp-box .rt-label{font-size:.62rem;color:#1A6B3A;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
+.reset-temp-box .rt-pin{font-family:var(--fd);font-size:2.2rem;font-weight:900;color:#1A6B3A;letter-spacing:.3em}
+.reset-temp-box .rt-note{font-size:.62rem;color:#1A6B3A;margin-top:5px;opacity:.75}
+/* Admin reset modal */
+.adm-reset-modal-overlay{position:fixed;inset:0;z-index:8600;background:rgba(26,18,8,.54);opacity:0;pointer-events:none;transition:opacity .28s;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.adm-reset-modal-overlay.open{opacity:1;pointer-events:auto}
+.adm-reset-modal{position:fixed;bottom:0;left:0;right:0;z-index:8700;background:var(--cream);border-radius:22px 22px 0 0;transform:translateY(100%);transition:transform .34s var(--ease);padding:0 20px calc(var(--safe-b)+20px);box-shadow:0 -16px 50px rgba(26,18,8,.2)}
+.adm-reset-modal.open{transform:translateY(0)}
+.adm-reset-title{font-family:var(--fh);font-size:1.05rem;font-weight:700;color:var(--ink);margin:16px 0 4px;text-align:center}
+.adm-reset-sub{font-size:.7rem;color:var(--muted);text-align:center;margin-bottom:16px;line-height:1.6}
+.reset-req-badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:100px;background:rgba(255,120,0,.14);color:#b26000;border:1px solid rgba(255,120,0,.28);font-size:.54rem;font-weight:800;text-transform:uppercase;margin-left:6px}
+</style>
+</head>
+<body>
+
+<!-- ══ SPLASH ══ -->
+<div id="splash" aria-hidden="true">
+  <div class="spl-icon">✦</div>
+  <div class="spl-brand">Southern Star<br>Jewellery</div>
+  <div class="spl-sub">Est. 1985 · Delhi, India</div>
+  <div class="spl-bar-wrap"><div class="spl-bar"></div></div>
+</div>
+
+<!-- ══ LOGIN SCREEN ══ -->
+<div id="loginScreen" role="dialog" aria-label="Login to Southern Star">
+  <div class="login-top">
+    <span class="login-gem">✦</span>
+    <span class="login-brand">Southern Star</span>
+    <span class="login-sub-text">Jewellery · Est. 1985 · Delhi</span>
+  </div>
+  <div class="login-card">
+
+    <!-- STEP: REGISTER -->
+    <div id="step-register" style="display:none">
+      <div class="login-title">Welcome! 🙏</div>
+      <div class="login-hint">Register once to track appointments & receive exclusive offers.</div>
+      <div class="lf">
+        <div class="lf-grp"><label class="lf-lbl" for="regName">Your Full Name</label><input class="lf-inp" id="regName" type="text" placeholder="e.g. Priya Sharma" autocomplete="name" autocapitalize="words"></div>
+        <div class="lf-grp"><label class="lf-lbl" for="regPhone">Mobile Number</label><input class="lf-inp" id="regPhone" type="tel" inputmode="numeric" placeholder="10-digit mobile number" maxlength="10" autocomplete="tel"></div>
+        <div class="login-err" id="regErr"></div>
+        <button class="login-btn" onclick="regStep1()">Continue →</button>
+        <div class="login-switch">Already registered? <a onclick="showLoginStep('login-mpin')">Login here</a></div>
+      </div>
+    </div>
+
+    <!-- STEP: SET MPIN -->
+    <div id="step-setpin" style="display:none">
+      <div class="login-title">Create Your MPIN 🔐</div>
+      <div class="login-hint" id="setPinHint">Choose a secret 4-digit MPIN. You'll enter only your name + MPIN each time.</div>
+      <div class="mpin-label" id="setPinLabel">Enter MPIN</div>
+      <div class="mpin-dots" id="setPinDots">
+        <div class="mpin-dot"></div><div class="mpin-dot"></div><div class="mpin-dot"></div><div class="mpin-dot"></div>
+      </div>
+      <div class="pin-pad">
+        <button class="pin-key" onclick="pinKey('set',1)" aria-label="1">1<span class="pin-sub"></span></button>
+        <button class="pin-key" onclick="pinKey('set',2)" aria-label="2">2<span class="pin-sub">ABC</span></button>
+        <button class="pin-key" onclick="pinKey('set',3)" aria-label="3">3<span class="pin-sub">DEF</span></button>
+        <button class="pin-key" onclick="pinKey('set',4)" aria-label="4">4<span class="pin-sub">GHI</span></button>
+        <button class="pin-key" onclick="pinKey('set',5)" aria-label="5">5<span class="pin-sub">JKL</span></button>
+        <button class="pin-key" onclick="pinKey('set',6)" aria-label="6">6<span class="pin-sub">MNO</span></button>
+        <button class="pin-key" onclick="pinKey('set',7)" aria-label="7">7<span class="pin-sub">PQRS</span></button>
+        <button class="pin-key" onclick="pinKey('set',8)" aria-label="8">8<span class="pin-sub">TUV</span></button>
+        <button class="pin-key" onclick="pinKey('set',9)" aria-label="9">9<span class="pin-sub">WXYZ</span></button>
+        <button class="pin-key zero" onclick="pinKey('set',0)" aria-label="0">0</button>
+        <button class="pin-key del" onclick="pinDel('set')" aria-label="Delete">⌫</button>
+      </div>
+      <div class="login-err" id="setPinErr"></div>
+    </div>
+
+    <!-- STEP: LOGIN WITH NAME + MPIN -->
+    <div id="step-login-mpin" style="display:none">
+      <div class="login-title">Welcome Back 👋</div>
+      <div class="login-hint">Enter your name and 4-digit MPIN to continue.</div>
+      <div class="lf" style="margin-bottom:16px">
+        <div class="lf-grp"><label class="lf-lbl" for="loginName">Your Name</label><input class="lf-inp" id="loginName" type="text" placeholder="Enter your name" autocomplete="name" autocapitalize="words"></div>
+      </div>
+      <div class="mpin-label">Enter MPIN</div>
+      <div class="mpin-dots" id="loginPinDots">
+        <div class="mpin-dot"></div><div class="mpin-dot"></div><div class="mpin-dot"></div><div class="mpin-dot"></div>
+      </div>
+      <div class="pin-pad">
+        <button class="pin-key" onclick="pinKey('login',1)">1<span class="pin-sub"></span></button>
+        <button class="pin-key" onclick="pinKey('login',2)">2<span class="pin-sub">ABC</span></button>
+        <button class="pin-key" onclick="pinKey('login',3)">3<span class="pin-sub">DEF</span></button>
+        <button class="pin-key" onclick="pinKey('login',4)">4<span class="pin-sub">GHI</span></button>
+        <button class="pin-key" onclick="pinKey('login',5)">5<span class="pin-sub">JKL</span></button>
+        <button class="pin-key" onclick="pinKey('login',6)">6<span class="pin-sub">MNO</span></button>
+        <button class="pin-key" onclick="pinKey('login',7)">7<span class="pin-sub">PQRS</span></button>
+        <button class="pin-key" onclick="pinKey('login',8)">8<span class="pin-sub">TUV</span></button>
+        <button class="pin-key" onclick="pinKey('login',9)">9<span class="pin-sub">WXYZ</span></button>
+        <button class="pin-key zero" onclick="pinKey('login',0)">0</button>
+        <button class="pin-key del" onclick="pinDel('login')">⌫</button>
+      </div>
+      <div class="login-err" id="loginErr"></div>
+      <div class="login-switch" style="margin-top:12px">New customer? <a onclick="showLoginStep('register')">Register here</a></div>
+      <div class="login-switch" style="margin-top:8px">Forgot MPIN? <a onclick="showLoginStep('forgot')">Reset here</a></div>
+    
+    <!-- STEP: FORGOT MPIN — ENTER MOBILE ——————— -->
+    <div id="step-forgot" style="display:none">
+      <div class="login-title">Forgot MPIN? 🔑</div>
+      <div class="login-hint">Enter your registered mobile number to request a reset.</div>
+      <div class="lf">
+        <div class="lf-grp"><label class="lf-lbl" for="forgotMobile">Registered Mobile Number</label>
+          <input class="lf-inp" id="forgotMobile" type="tel" inputmode="numeric" placeholder="10-digit mobile" maxlength="10" autocomplete="tel">
+        </div>
+        <div class="login-err" id="forgotErr"></div>
+        <button class="login-btn" onclick="submitForgotRequest()">🔍 Find My Account</button>
+        <div class="login-switch">Remember it? <a onclick="showLoginStep('login-mpin')">Back to Login</a></div>
+      </div>
+    </div>
+
+    <!-- STEP: FORGOT — FOUND ACCOUNT ——————————— -->
+    <div id="step-forgot-found" style="display:none">
+      <div class="login-title">Account Found ✅</div>
+      <div class="reset-info-box">
+        <div class="ri-icon">🏪</div>
+        <div class="ri-title">Request Sent to Our Team</div>
+        <div class="ri-sub">Your reset request has been logged.<br>Please <strong>visit any showroom</strong> or<br><strong>call us at <a href="tel:+919999536699" style="color:var(--burg)">9999536699</a></strong> — our team will give you a temporary MPIN.</div>
+      </div>
+      <div style="background:var(--ivory);border-radius:var(--r-s);padding:11px;border:1px solid var(--bdr);margin:8px 0;font-size:.7rem;color:var(--muted);text-align:center;line-height:1.65">
+        📍 Karol Bagh · Dilshad Garden · Pitampura<br>Open 10:30 AM – 8:00 PM, all 7 days
+      </div>
+      <button class="login-btn" onclick="showLoginStep('login-mpin')" style="margin-top:8px">✓ Got My Temp MPIN → Login</button>
+      <div class="login-switch" style="margin-top:10px">Or <a onclick="showLoginStep('register')">register a new account</a></div>
+    </div>
+
+    <!-- STEP: FORCED NEW MPIN (after temp pin login) ————— -->
+    <div id="step-newpin" style="display:none">
+      <div class="login-title">Set New MPIN 🔐</div>
+      <div class="login-hint">Your temporary MPIN worked! Now create your personal 4-digit MPIN.</div>
+      <div class="mpin-label" id="newPinLabel">Enter new MPIN</div>
+      <div class="mpin-dots" id="newPinDots">
+        <div class="mpin-dot"></div><div class="mpin-dot"></div><div class="mpin-dot"></div><div class="mpin-dot"></div>
+      </div>
+      <div class="pin-pad">
+        <button class="pin-key" onclick="pinKey('newpin',1)">1<span class="pin-sub"></span></button>
+        <button class="pin-key" onclick="pinKey('newpin',2)">2<span class="pin-sub">ABC</span></button>
+        <button class="pin-key" onclick="pinKey('newpin',3)">3<span class="pin-sub">DEF</span></button>
+        <button class="pin-key" onclick="pinKey('newpin',4)">4<span class="pin-sub">GHI</span></button>
+        <button class="pin-key" onclick="pinKey('newpin',5)">5<span class="pin-sub">JKL</span></button>
+        <button class="pin-key" onclick="pinKey('newpin',6)">6<span class="pin-sub">MNO</span></button>
+        <button class="pin-key" onclick="pinKey('newpin',7)">7<span class="pin-sub">PQRS</span></button>
+        <button class="pin-key" onclick="pinKey('newpin',8)">8<span class="pin-sub">TUV</span></button>
+        <button class="pin-key" onclick="pinKey('newpin',9)">9<span class="pin-sub">WXYZ</span></button>
+        <button class="pin-key zero" onclick="pinKey('newpin',0)">0</button>
+        <button class="pin-key del" onclick="pinDel('newpin')">⌫</button>
+      </div>
+      <div class="login-err" id="newPinErr"></div>
+    </div>
+
+</div>
+
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<!-- ══ TICKER ══ -->
+<div class="ticker" id="ticker" role="marquee" aria-label="Live gold rates">
+  <div class="ticker-track" id="tickerTrack">
+    <span class="t-seg"><span class="t-pip"></span><b>Gold 24K</b> <span id="tick24k">₹7,200/g</span></span>
+    <span class="t-seg"><b>Gold 22K</b> <span id="tick22k">₹6,600/g</span></span>
+    <span class="t-seg"><b>Gold 18K</b> <span id="tick18k">₹5,400/g</span></span>
+    <span class="t-seg"><b>Silver</b> <span id="tickSilver">₹85/g</span></span>
+    <span class="t-seg"><span class="t-pip"></span><b>BIS HUID</b> 100% Certified</span>
+    <span class="t-seg"><b>Karol Bagh</b> 9999536649</span>
+    <span class="t-seg"><b>Dilshad Garden</b> 9999536640</span>
+    <span class="t-seg"><b>Pitampura</b> 9999536616</span>
+    <span class="t-seg"><span class="t-pip"></span><b>Gold 24K</b> <span class="tdp24k">₹7,200/g</span></span>
+    <span class="t-seg"><b>Gold 22K</b> <span class="tdp22k">₹6,600/g</span></span>
+    <span class="t-seg"><b>Gold 18K</b> <span class="tdp18k">₹5,400/g</span></span>
+    <span class="t-seg"><b>Silver</b> <span class="tdpSilver">₹85/g</span></span>
+    <span class="t-seg"><span class="t-pip"></span><b>BIS HUID</b> 100% Certified</span>
+    <span class="t-seg"><b>Karol Bagh</b> 9999536649</span>
+    <span class="t-seg"><b>Dilshad Garden</b> 9999536640</span>
+    <span class="t-seg"><b>Pitampura</b> 9999536616</span>
+  </div>
+</div>
+
+<!-- ══ TOP BAR ══ -->
+<header class="top-bar" id="topBar">
+  <div class="top-bar-inner">
+    <div class="top-logo" onclick="showScreen('home')" role="button" tabindex="0" aria-label="Home">
+      <span class="top-logo-n">SOUTHERN STAR</span>
+      <span class="top-logo-s">Jewellery · Est. 1985 · Delhi</span>
+    </div>
+    <div class="top-actions">
+      <a class="tba" href="https://wa.me/919999536699?text=Hi+Southern+Star!" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
+      <button class="tba" onclick="openCart()" aria-label="Wishlist">🛒<span class="cart-badge" id="cartBadge">0</span></button>
+      <div class="user-av" id="userAvatarBtn" onclick="openProfile()" role="button" aria-label="My Account">?</div>
+    </div>
+  </div>
+</header>
+
+<!-- ══════ HOME ══════ -->
+<section id="screen-home" class="screen active screen-pad">
+  <div class="hero-card">
+    <div class="hero-bg"><img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=800&h=500&fit=crop&q=80" alt="" loading="eager" onerror="this.parentElement.style.display='none'" width="800" height="500"></div>
+    <span aria-hidden="true" style="position:absolute;left:74%;top:14%;font-size:.9rem;opacity:.16;animation:splP 7s ease-in-out infinite">💎</span>
+    <span aria-hidden="true" style="position:absolute;left:84%;top:38%;font-size:.9rem;opacity:.16;animation:splP 7s ease-in-out 1.6s infinite">✦</span>
+    <div class="hero-body">
+      <div class="hero-ey">Premium Jewellery · Delhi · Since 1985</div>
+      <h1 class="hero-h1"><span class="brand">Southern Star</span>Crafted in <em>Gold</em>, Worn with <em>Pride</em></h1>
+      <p class="hero-sub">BIS HUID hallmarked jewellery. South Indian artisanship across 3 Delhi showrooms.</p>
+      <div class="hero-btns">
+        <button class="btn-cta" onclick="showScreen('collections')">✦ Explore</button>
+        <button class="btn-out" onclick="showScreen('appointment')">Book Visit</button>
+      </div>
+    </div>
+  </div>
+  <div class="kpi-strip">
+    <div class="kpi"><div class="kpi-v">37+</div><div class="kpi-l">Years</div></div>
+    <div class="kpi"><div class="kpi-v">5K+</div><div class="kpi-l">Families</div></div>
+    <div class="kpi"><div class="kpi-v">3</div><div class="kpi-l">Showrooms</div></div>
+    <div class="kpi"><div class="kpi-v">100%</div><div class="kpi-l">HUID</div></div>
+  </div>
+  <div class="sec-title" style="margin-top:14px"><div class="sec-line"></div><span class="sec-text">Quick Access</span></div>
+  <div class="qa-grid">
+    <div class="qa-item" onclick="showScreen('collections')"><div class="qa-icon">💎</div><div class="qa-label">Collections</div></div>
+    <div class="qa-item" onclick="showScreen('schemes')"><div class="qa-icon">📊</div><div class="qa-label">Schemes</div></div>
+    <div class="qa-item" onclick="showScreen('showrooms')"><div class="qa-icon">📍</div><div class="qa-label">Showrooms</div></div>
+    <div class="qa-item" onclick="showScreen('appointment')"><div class="qa-icon">📅</div><div class="qa-label">Book Visit</div></div>
+  </div>
+  <div class="sec-title" style="margin-top:14px"><div class="sec-line"></div><span class="sec-text">Today's Rates</span><div class="sec-badge"><span class="live-dot"></span>Live</div></div>
+  <div class="h-scroll"><div class="h-row">
+    <div class="rate-chip"><div class="rc-metal">Gold 24K</div><div class="rc-val" id="home24k">₹7,200</div><div class="rc-unit">per gram · 99.9%</div></div>
+    <div class="rate-chip"><div class="rc-metal">Gold 22K</div><div class="rc-val" id="home22k">₹6,600</div><div class="rc-unit">per gram · 91.6%</div></div>
+    <div class="rate-chip"><div class="rc-metal">Gold 18K</div><div class="rc-val" id="home18k">₹5,400</div><div class="rc-unit">per gram · 75.0%</div></div>
+    <div class="rate-chip"><div class="rc-metal">Silver</div><div class="rc-val" id="homeSilver">₹85</div><div class="rc-unit">per gram (999)</div></div>
+  </div></div>
+  <p style="font-size:.6rem;color:var(--muted);padding:7px 14px 0;text-align:center;line-height:1.55" id="rateNote">MCX indicative rates. Actual billing at time of purchase. GST 3% extra.</p>
+  <div class="sec-title" style="margin-top:14px"><div class="sec-line"></div><span class="sec-text">Why Southern Star</span></div>
+  <div class="h-scroll"><div class="h-row">
+    <div class="why-chip"><div class="why-ic">💎</div><div class="why-t">BIS HUID Certified</div><div class="why-d">Scan HUID on BIS Care app to verify purity.</div></div>
+    <div class="why-chip"><div class="why-ic">🔬</div><div class="why-t">Free Purity Test</div><div class="why-d">XRF spectrometer — instant, free results.</div></div>
+    <div class="why-chip"><div class="why-ic">💯</div><div class="why-t">Transparent Price</div><div class="why-d">Full breakdown: rate × wt + making + GST.</div></div>
+    <div class="why-chip"><div class="why-ic">🔄</div><div class="why-t">Lifetime Exchange</div><div class="why-d">Exchange at current market rates anytime.</div></div>
+    <div class="why-chip"><div class="why-ic">🏛️</div><div class="why-t">37+ Years Legacy</div><div class="why-d">Three generations serving Delhi families.</div></div>
+  </div></div>
+  <div class="sec-title" style="margin-top:14px"><div class="sec-line"></div><span class="sec-text">Customer Stories</span></div>
+  <div class="h-scroll"><div class="h-row">
+    <div class="testi-card"><div class="tc-stars">⭐⭐⭐⭐⭐</div><span class="tc-q">"</span><p class="tc-text">Twelve years buying from Southern Star. Every piece hallmarked, pricing 100% transparent.</p><div class="tc-person"><div class="tc-av">P</div><div><div class="tc-name">Priya Sharma</div><div class="tc-buy">Bridal Set · Karol Bagh</div></div></div></div>
+    <div class="testi-card"><div class="tc-stars">⭐⭐⭐⭐⭐</div><span class="tc-q">"</span><p class="tc-text">The NIDHI scheme is brilliant. Zero making charges at maturity. Invested for my daughter's wedding.</p><div class="tc-person"><div class="tc-av">R</div><div><div class="tc-name">Rajesh Kumar</div><div class="tc-buy">NIDHI Scheme · Dilshad Garden</div></div></div></div>
+    <div class="testi-card"><div class="tc-stars">⭐⭐⭐⭐⭐</div><span class="tc-q">"</span><p class="tc-text">Authentic temple jewellery from Kerala craftsmen. Impossible to find in Delhi, until Southern Star!</p><div class="tc-person"><div class="tc-av">A</div><div><div class="tc-name">Anjali Menon</div><div class="tc-buy">Temple Set · Pitampura</div></div></div></div>
+  </div></div>
+  <div class="footer-strip" style="margin-top:18px">
+    <div class="footer-brand">SOUTHERN STAR JEWELLERY</div>
+    <div class="footer-tag">Real Gold at Real Prices — Since 1985</div>
+    <div class="footer-links">
+      <a href="tel:+919999536699" class="footer-link">📞 9999536699</a>
+      <a href="https://wa.me/919999536699" target="_blank" rel="noopener" class="footer-link">💬 WhatsApp</a>
+    </div>
+    <div class="footer-copy">© 2025 Southern Star Jewellers Pvt. Ltd. · All Rights Reserved</div>
+  </div>
+</section>
+
+<!-- ══════ COLLECTIONS ══════ -->
+<section id="screen-collections" class="screen screen-pad">
+  <div class="page-header"><div class="ph-ey">Our Collections</div><h2 class="ph-title">Jewellery for <em>every moment</em></h2><p class="ph-sub">Every piece BIS HUID hallmarked. Transparent pricing. No hidden charges.</p></div>
+  <div class="filter-bar" role="group" aria-label="Filter by category">
+    <button class="filter-btn active" onclick="filterProds(this,'all')">All</button>
+    <button class="filter-btn" onclick="filterProds(this,'necklace')">Necklaces</button>
+    <button class="filter-btn" onclick="filterProds(this,'earring')">Earrings</button>
+    <button class="filter-btn" onclick="filterProds(this,'bangle')">Bangles</button>
+    <button class="filter-btn" onclick="filterProds(this,'ring')">Rings</button>
+    <button class="filter-btn" onclick="filterProds(this,'temple')">Temple</button>
+  </div>
+  <div class="prod-grid" id="prodGrid" role="list" aria-live="polite"></div>
+  <div style="padding:0 12px 20px;font-size:.62rem;color:var(--muted);text-align:center;line-height:1.65">All prices include 22K gold at today's live rate. Final billing at purchase date rate. GST 3% included.</div>
+</section>
+
+<!-- ══════ SCHEMES ══════ -->
+<section id="screen-schemes" class="screen screen-pad">
+  <div class="page-header"><div class="ph-ey">Gold Investment Schemes</div><h2 class="ph-title">Grow your <em>gold wealth</em></h2><p class="ph-sub">Invest systematically. RBI & Consumer Protection Act compliant.</p></div>
+  <div class="sec-title" style="margin-top:14px"><div class="sec-line"></div><span class="sec-text">Choose a Scheme</span></div>
+  <div id="schList" role="list" aria-label="Gold schemes"></div>
+  <div class="calc-card" style="margin-top:13px">
+    <h3>💰 Returns Calculator</h3>
+    <p class="calc-sub">See what you get at maturity — at today's live rate</p>
+    <div class="cf"><label class="cl" for="calcScheme">Scheme</label>
+      <select class="cs" id="calcScheme" onchange="onSchChange()">
+        <option value="nidhi">NIDHI — No Making Charges (13 months)</option>
+        <option value="mine">MINE — 2 Month Bonus EMI (20 months)</option>
+        <option value="golden_harvest">Golden Harvest — 70% EMI Bonus (6 months)</option>
+        <option value="suvarna_varsha">Suvarna Varsha — Gold Accumulation</option>
+        <option value="solitaire">Solitaire Diamond — 3 Free EMIs (9 months)</option>
+      </select>
+    </div>
+    <div id="regularCalcFields">
+      <div class="cf"><label class="cl" for="calcMonthly">Monthly Instalment (₹)</label><input class="ci" id="calcMonthly" type="number" inputmode="numeric" value="10000" min="1000" step="1000"></div>
+      <div class="cf"><label class="cl" for="calcDur">Duration (Months)</label><input class="ci" id="calcDur" type="number" value="13" min="1" readonly></div>
+      <button class="calc-btn" onclick="runCalc()">📊 Calculate Returns</button>
+      <div class="calc-res" id="calcRes">
+        <div class="rr"><span class="rl">Total Invested</span><span class="rv" id="rInv">—</span></div>
+        <div class="rr"><span class="rl">Bonus Benefit</span><span class="rv bonus" id="rBonus">—</span></div>
+        <div class="rr total-row"><span class="rl">🏆 Total Gold Worth</span><span class="rv" id="rTotal">—</span></div>
+        <div class="rr"><span class="rl">Gold Weight (22K rate)</span><span class="rv" id="rGrams">—</span></div>
+      </div>
+    </div>
+    <div id="svCalcSection" style="display:none">
+      <p style="font-size:.72rem;color:var(--muted);margin-bottom:11px;line-height:1.65">Pay any amount on any day. Gold grams credited at that day's rate.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:7px">
+        <div class="cf"><label class="cl" for="svRate">Rate (₹/g)</label><input class="ci" id="svRate" type="number" inputmode="numeric" value="6600" min="1"></div>
+        <div class="cf"><label class="cl" for="svAmt">Payment (₹)</label><input class="ci" id="svAmt" type="number" inputmode="numeric" placeholder="e.g. 10000" min="1"></div>
+      </div>
+      <button class="sv-add-btn" onclick="svAdd()" style="width:100%;margin-bottom:9px">+ Add Payment</button>
+      <div id="svWPanel" style="display:none;margin-bottom:9px">
+        <div class="cf"><label class="cl" for="svWg">Grams to Withdraw</label><input class="ci" id="svWg" type="number" inputmode="decimal" step="0.0001" min="0.0001"></div>
+        <div style="display:flex;gap:7px">
+          <button class="sv-add-btn" onclick="svWithdraw()" style="flex:1;background:var(--gold-d)">✔ Confirm</button>
+          <button class="sv-add-btn" onclick="document.getElementById('svWPanel').style.display='none'" style="flex:1;background:var(--muted)">Cancel</button>
+        </div>
+      </div>
+      <div style="display:flex;gap:7px;margin-bottom:9px">
+        <button class="sv-add-btn" onclick="svToggleW()" style="flex:1;background:var(--gold-d);font-size:.64rem">⚖ Withdraw Gold</button>
+        <button class="sv-add-btn" onclick="svClear()" style="flex:1;background:var(--muted);font-size:.64rem">Clear All</button>
+      </div>
+      <div class="sv-tbl-wrap"><table class="sv-tbl" id="svTbl"><thead><tr><th>Date</th><th>Rate</th><th>Paid</th><th>Added(g)</th><th>Withdrawn(g)</th><th>Balance(g)</th></tr></thead><tbody id="svBody"><tr><td colspan="6" style="text-align:center;color:var(--muted);padding:16px;font-size:.7rem">Add your first payment above ↑</td></tr></tbody></table></div>
+      <div style="margin-top:9px;padding:9px 12px;background:var(--gold-pale);border-radius:var(--r-s);border:1px solid var(--bdr-m);font-size:.7rem;color:var(--gold-d);font-weight:700" id="svBalDisplay">Balance: 0.0000g</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ SHOWROOMS ══════ -->
+<section id="screen-showrooms" class="screen screen-pad">
+  <div class="page-header"><div class="ph-ey">Visit Us</div><h2 class="ph-title">Three showrooms, <em>one promise</em></h2><p class="ph-sub">Open all 7 days · 10:30 AM – 8:00 PM · Walk-ins welcome</p></div>
+  <div class="sec-title" style="margin-top:14px"><div class="sec-line"></div><span class="sec-text">Our Locations</span></div>
+  <div class="showroom-card flagship reveal">
+    <div class="s-badge">⭐ Flagship</div><h3 class="s-name">Karol Bagh</h3>
+    <ul class="s-facts">
+      <li class="s-fact"><span class="s-ic">📍</span><span class="s-txt">Ground Floor, Tewari House, 11/B/8, near Metro Pillar 136, Old Rajinder Nagar, Delhi 110005</span></li>
+      <li class="s-fact"><span class="s-ic">📞</span><span class="s-txt"><a href="tel:+919999536649">9999536649</a> · <a href="tel:+919999536659">9999536659</a></span></li>
+      <li class="s-fact"><span class="s-ic">🕐</span><span class="s-txt">10:30 AM – 8:00 PM · All 7 days</span></li>
+    </ul>
+    <a href="https://www.google.com/maps/dir//SOUTHERN+STAR+JEWELLERY,+Old+Rajinder+Nagar,+Delhi" target="_blank" rel="noopener" class="dir-btn">📍 Directions</a>
+    <a href="tel:+919999536649" class="call-btn">📞 Call Karol Bagh</a>
+    <a href="https://wa.me/919999536699?text=Hi!+Want+to+visit+Karol+Bagh+showroom" target="_blank" rel="noopener" class="wa-btn">💬 WhatsApp</a>
+  </div>
+  <div class="showroom-card reveal">
+    <div class="s-badge">🏪 Showroom</div><h3 class="s-name">Dilshad Garden</h3>
+    <ul class="s-facts">
+      <li class="s-fact"><span class="s-ic">📍</span><span class="s-txt">Metro Station Building, G-5C, Dilshad Garden, Delhi 110095</span></li>
+      <li class="s-fact"><span class="s-ic">📞</span><span class="s-txt"><a href="tel:+919999536640">9999536640</a> · <a href="tel:01143472516">011-43472516</a></span></li>
+      <li class="s-fact"><span class="s-ic">🕐</span><span class="s-txt">10:30 AM – 8:00 PM · All 7 days</span></li>
+    </ul>
+    <a href="https://www.google.com/maps/dir//Southern+Star+Jewellers,+G-5C,+Dilshad+Garden,+Delhi" target="_blank" rel="noopener" class="dir-btn">📍 Directions</a>
+    <a href="tel:+919999536640" class="call-btn">📞 Call Dilshad Garden</a>
+  </div>
+  <div class="showroom-card reveal">
+    <div class="s-badge">🏪 Showroom</div><h3 class="s-name">Pitampura</h3>
+    <ul class="s-facts">
+      <li class="s-fact"><span class="s-ic">📍</span><span class="s-txt">Shop No. 16, near Metro Pillar 350, Kapil Vihar, Pitampura, Delhi 110034</span></li>
+      <li class="s-fact"><span class="s-ic">📞</span><span class="s-txt"><a href="tel:+919999536616">9999536616</a> · <a href="tel:01142458313">011-42458313</a></span></li>
+      <li class="s-fact"><span class="s-ic">🕐</span><span class="s-txt">10:30 AM – 8:00 PM · All 7 days</span></li>
+    </ul>
+    <a href="https://www.google.com/maps/dir//Southern+Star+Jewellery,+Pitampura,+Delhi" target="_blank" rel="noopener" class="dir-btn">📍 Directions</a>
+    <a href="tel:+919999536616" class="call-btn">📞 Call Pitampura</a>
+  </div>
+  <div class="showroom-card reveal" style="border-color:var(--bdr-m)">
+    <div class="s-badge">🏢 Head Office</div><h3 class="s-name">New Rajendra Nagar</h3>
+    <ul class="s-facts">
+      <li class="s-fact"><span class="s-ic">📍</span><span class="s-txt">E-10 UGF, DDA Market, New Rajendra Nagar, Delhi 110060</span></li>
+      <li class="s-fact"><span class="s-ic">📞</span><span class="s-txt"><a href="tel:+919999536699">9999536699</a> · <a href="tel:01128741800">011-28741800</a></span></li>
+      <li class="s-fact"><span class="s-ic">✉️</span><span class="s-txt">info@southernjewellers.in</span></li>
+    </ul>
+    <a href="tel:+919999536699" class="call-btn">📞 Call Head Office</a>
+    <a href="https://wa.me/919999536699?text=Hi+Southern+Star!" target="_blank" rel="noopener" class="wa-btn">💬 WhatsApp</a>
+  </div>
+</section>
+
+<!-- ══════ APPOINTMENT ══════ -->
+<section id="screen-appointment" class="screen screen-pad">
+  <div class="page-header"><div class="ph-ey">Personal Service</div><h2 class="ph-title">Book your <em>consultation</em></h2><p class="ph-sub">One-on-one attention. Confirmation within 30 minutes.</p></div>
+  <div class="sec-title" style="margin-top:13px"><div class="sec-line"></div><span class="sec-text">Book Appointment</span></div>
+  <form class="appt-form" id="apptForm" onsubmit="submitAppt(event)" novalidate aria-label="Appointment booking form">
+    <div class="ff"><label class="fl" for="aName">Full Name *</label><input class="fi" id="aName" type="text" placeholder="Your full name" required autocomplete="name" autocapitalize="words"></div>
+    <div class="ff"><label class="fl" for="aPhone">Phone Number *</label><input class="fi" id="aPhone" type="tel" inputmode="numeric" placeholder="10-digit mobile" maxlength="10" pattern="[0-9]{10}" required autocomplete="tel"></div>
+    <div class="ff"><label class="fl" for="aBranch">Select Showroom *</label>
+      <select class="fs" id="aBranch" required>
+        <option value="">Choose showroom...</option>
+        <option>Karol Bagh (Flagship)</option>
+        <option>Dilshad Garden</option>
+        <option>Pitampura</option>
+        <option>Head Office — New Rajendra Nagar</option>
+      </select>
+    </div>
+    <div class="ff"><label class="fl" for="aDate">Preferred Date *</label><input class="fi" id="aDate" type="date" required></div>
+    <div class="ff"><label class="fl">Select Time Slot *</label><div class="slots-grid" id="slotsGrid"></div></div>
+    <div class="ff"><label class="fl" for="aPurpose">Purpose</label>
+      <select class="fs" id="aPurpose">
+        <option>Browse Collections</option><option>Gold Scheme Enrollment</option>
+        <option>Custom Jewellery Design</option><option>Old Gold Exchange</option>
+        <option>Free Purity Testing</option><option>Bridal Consultation</option>
+        <option>Diamond Jewellery</option><option>Corporate / Bulk Purchase</option>
+      </select>
+    </div>
+    <div class="ff"><label class="fl" for="aBudget">Approximate Budget</label>
+      <select class="fs" id="aBudget">
+        <option value="">Prefer not to say</option><option>Under ₹25,000</option>
+        <option>₹25,000 – ₹1 Lakh</option><option>₹1 Lakh – ₹5 Lakhs</option>
+        <option>₹5 Lakhs – ₹10 Lakhs</option><option>Above ₹10 Lakhs</option>
+      </select>
+    </div>
+    <div class="ff"><label class="fl" for="aNotes">Special Requests</label><textarea class="fta" id="aNotes" placeholder="Occasion, requirements, questions..."></textarea></div>
+    <input type="text" id="_hp" style="position:absolute;left:-9999px;height:0" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <p class="form-note">* Required. For purchases above ₹2L please bring PAN card.</p>
+    <button type="submit" class="appt-submit">✓ Confirm via WhatsApp</button>
+  </form>
+</section>
+
+<!-- ══ BOTTOM NAV ══ -->
+<nav class="bottom-nav" role="navigation" aria-label="Main navigation">
+  <div class="bnav-inner">
+    <button class="bn-item active" id="bn-home" onclick="showScreen('home')" aria-label="Home" aria-current="page"><span class="bn-icon">🏠</span><span class="bn-label">Home</span></button>
+    <button class="bn-item" id="bn-collections" onclick="showScreen('collections')" aria-label="Collections"><span class="bn-icon">💎</span><span class="bn-label">Collections</span></button>
+    <button class="bn-item" id="bn-schemes" onclick="showScreen('schemes')" aria-label="Schemes"><span class="bn-icon">📊</span><span class="bn-label">Schemes</span></button>
+    <button class="bn-item" id="bn-showrooms" onclick="showScreen('showrooms')" aria-label="Showrooms"><span class="bn-icon">📍</span><span class="bn-label">Showrooms</span></button>
+    <button class="bn-item" id="bn-appointment" onclick="showScreen('appointment')" aria-label="Book"><span class="bn-icon">📅</span><span class="bn-label">Book</span></button>
+  </div>
+</nav>
+
+<!-- WA FLOAT -->
+<a class="wa-float" href="https://wa.me/919999536699?text=Hi+Southern+Star!" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">💬</a>
+
+<!-- CART -->
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+<div class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Wishlist">
+  <div class="cart-handle"></div>
+  <div class="cart-header"><h3>🛒 Wishlist</h3><button class="cart-close" onclick="closeCart()" aria-label="Close">✕</button></div>
+  <div class="cart-items" id="cartItems"><div class="cart-empty"><div class="ce-icon">🛒</div><p>Your cart is empty.</p></div></div>
+  <div id="cartFooter" style="display:none"><div class="cart-foot">
+    <p class="cart-note">⚠️ Final price billed at rate on day of purchase.</p>
+    <div class="cart-total"><span class="ct-label">Total (incl. 3% GST)</span><span class="ct-val" id="cartTotal">₹0</span></div>
+    <button class="cart-checkout" onclick="goToAppt()">📅 Book Appointment to Buy →</button>
+  </div></div>
+</div>
+
+<!-- PRODUCT MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+<div class="modal-sheet" id="modalSheet" role="dialog" aria-modal="true" aria-label="Product details">
+  <button class="modal-close-btn" onclick="closeModal()">← Back to Collections</button>
+  <img class="modal-img" id="modalImg" src="" alt="" loading="lazy" decoding="async">
+  <div class="modal-body">
+    <div class="modal-cat" id="modalCat"></div>
+    <h2 class="modal-name" id="modalName"></h2>
+    <p class="modal-desc" id="modalDesc"></p>
+    <div id="modalStars" style="display:flex;gap:2px;margin-bottom:12px"></div>
+    <div class="modal-price" id="modalPrice"></div>
+    <div class="price-bd" id="priceBreakdown"></div>
+    <div class="huid-row"><span>✅</span><span class="huid-text" id="huidText"></span></div>
+    <div class="modal-actions">
+      <button class="modal-add" onclick="addToCartFromModal()">🛒 Add to Wishlist</button>
+      <button class="modal-wa" onclick="inquireOnWA()">💬 Inquire on WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<!-- USER PROFILE SHEET -->
+<div class="profile-overlay" id="profileOverlay" onclick="closeProfile()"></div>
+<div class="profile-sheet" role="dialog" aria-modal="true" aria-label="My Account" id="profileSheet">
+  <div class="psh-handle"></div>
+  <div class="psh-head"><h3>My Account</h3><button class="cart-close" onclick="closeProfile()">✕</button></div>
+  <div class="p-body">
+    <div class="p-av-big" id="profileAv">?</div>
+    <div class="p-name" id="profileName">—</div>
+    <div class="p-mobile" id="profileMobile">📱 —</div>
+    <div class="p-since" id="profileSince"></div>
+    <button class="p-btn p-logout" onclick="logout()">🚪 Logout</button>
+    <button class="p-btn p-admin" onclick="closeProfile();openAdminLogin()">🔑 Admin Login</button>
+  </div>
+</div>
+
+<!-- ADMIN LOGIN SHEET -->
+<div class="admin-login-overlay" id="adminLoginOverlay" onclick="closeAdminLogin()"></div>
+<div class="admin-login-sheet" id="adminLoginSheet" role="dialog" aria-modal="true" aria-label="Admin Login">
+  <div style="width:38px;height:4px;background:var(--bdr-m);border-radius:2px;margin:10px auto 0"></div>
+  <div style="padding:20px 18px 24px">
+    <div style="text-align:center;margin-bottom:20px">
+      <div style="font-size:2rem;margin-bottom:7px">🔐</div>
+      <div style="font-family:var(--fh);font-size:1.1rem;font-weight:700;color:var(--ink)">Admin Access</div>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:3px">Enter admin mobile and MPIN</div>
+    </div>
+    <div class="lf-grp" style="margin-bottom:14px"><label class="lf-lbl" for="adminMobile">Admin Mobile Number</label><input class="lf-inp" id="adminMobile" type="tel" inputmode="numeric" placeholder="Mobile number" maxlength="10"></div>
+    <div class="mpin-label">Admin MPIN</div>
+    <div class="mpin-dots" id="adminPinDots"><div class="mpin-dot"></div><div class="mpin-dot"></div><div class="mpin-dot"></div><div class="mpin-dot"></div></div>
+    <div class="pin-pad" style="max-width:258px;margin:0 auto">
+      <button class="pin-key" onclick="pinKey('admin',1)">1</button>
+      <button class="pin-key" onclick="pinKey('admin',2)">2</button>
+      <button class="pin-key" onclick="pinKey('admin',3)">3</button>
+      <button class="pin-key" onclick="pinKey('admin',4)">4</button>
+      <button class="pin-key" onclick="pinKey('admin',5)">5</button>
+      <button class="pin-key" onclick="pinKey('admin',6)">6</button>
+      <button class="pin-key" onclick="pinKey('admin',7)">7</button>
+      <button class="pin-key" onclick="pinKey('admin',8)">8</button>
+      <button class="pin-key" onclick="pinKey('admin',9)">9</button>
+      <button class="pin-key zero" onclick="pinKey('admin',0)">0</button>
+      <button class="pin-key del" onclick="pinDel('admin')">⌫</button>
+    </div>
+    <div class="login-err" id="adminLoginErr" style="margin-top:11px"></div>
+  </div>
+</div>
+
+<!-- ══ ADMIN PANEL ══ -->
+<div id="adminScreen" role="dialog" aria-modal="true" aria-label="Admin Panel">
+  <div class="adm-topbar">
+    <div class="adm-title">⚙️ Admin Panel — Southern Star</div>
+    <button class="adm-close" onclick="closeAdmin()" aria-label="Close">✕</button>
+  </div>
+  <div class="adm-tabs">
+    <button class="adm-tab active" onclick="switchAdmTab(this,'rates')">📈 Gold Rates</button>
+    <button class="adm-tab" onclick="switchAdmTab(this,'appointments')">📅 Appointments</button>
+    <button class="adm-tab" onclick="switchAdmTab(this,'customers')">👥 Customers</button>
+    <button class="adm-tab" onclick="switchAdmTab(this,'dashboard')">📊 Dashboard</button>
+  </div>
+  <div class="adm-body">
+    <!-- RATES TAB -->
+    <div class="adm-panel active" id="adm-rates">
+      <div class="rate-editor">
+        <div class="re-head"><div class="re-title">Live Rate Manager</div><div class="re-sub">Changes update instantly everywhere in the app — ticker, cards, products, calculator</div></div>
+        <div class="re-body">
+          <div class="re-field"><span class="re-ic">🥇</span><span class="re-label">Gold 24K (99.9%)</span><input class="re-inp" id="admin24k" type="number" inputmode="numeric" min="1"><span class="re-unit">₹/g</span></div>
+          <div class="re-field"><span class="re-ic">🥈</span><span class="re-label">Gold 22K (91.6%)</span><input class="re-inp" id="admin22k" type="number" inputmode="numeric" min="1"><span class="re-unit">₹/g</span></div>
+          <div class="re-field"><span class="re-ic">💛</span><span class="re-label">Gold 18K (75.0%)</span><input class="re-inp" id="admin18k" type="number" inputmode="numeric" min="1"><span class="re-unit">₹/g</span></div>
+          <div class="re-field"><span class="re-ic">⚪</span><span class="re-label">Silver (999 fine)</span><input class="re-inp" id="adminSilver" type="number" inputmode="numeric" min="1"><span class="re-unit">₹/g</span></div>
+        </div>
+      </div>
+      <button class="re-save-btn" onclick="saveRates()">✅ Update All Rates Instantly</button>
+      <div class="re-last" id="lastRateUpdate">Last updated: Not yet</div>
+      <div style="margin-top:14px;padding:13px;background:rgba(74,222,128,.08);border-radius:var(--r-s);border:1px solid rgba(74,222,128,.18);font-size:.7rem;color:#1A6B3A;line-height:1.65">✅ Rate changes propagate instantly: Ticker · Home Cards · Product Prices · Scheme Calculator — all update in real-time without page refresh.</div>
+    </div>
+    <!-- APPOINTMENTS TAB -->
+    <div class="adm-panel" id="adm-appointments">
+      <div class="adm-stats" id="apptStats"></div>
+      <div class="adm-filter-row" id="apptFilterRow">
+        <span class="af-chip sel" onclick="setApptFilter(this,'all')">All</span>
+        <span class="af-chip" onclick="setApptFilter(this,'pending')">Pending</span>
+        <span class="af-chip" onclick="setApptFilter(this,'confirmed')">Confirmed</span>
+      </div>
+      <input class="adm-search" id="apptSearch" type="search" placeholder="🔍 Search name, phone, branch..." oninput="renderAppts()">
+      <div id="apptList"></div>
+    </div>
+    <!-- CUSTOMERS TAB -->
+    <div class="adm-panel" id="adm-customers">
+      <div class="adm-stats" id="custStats"></div>
+      <input class="adm-search" id="custSearch" type="search" placeholder="🔍 Search name or mobile..." oninput="renderCustomers()">
+      <div id="custList"></div>
+    </div>
+    <!-- DASHBOARD TAB -->
+    <div class="adm-panel" id="adm-dashboard">
+      <div class="adm-stats" id="dashStats" style="grid-template-columns:1fr 1fr 1fr"></div>
+      <div style="background:var(--warm);border-radius:var(--r);padding:14px;border:1px solid var(--bdr);margin-bottom:12px">
+        <div style="font-family:var(--fh);font-size:.92rem;font-weight:700;color:var(--ink);margin-bottom:11px">Current Gold Rates</div>
+        <div id="dashRates"></div>
+      </div>
+      <div style="background:var(--warm);border-radius:var(--r);padding:14px;border:1px solid var(--bdr);margin-bottom:12px">
+        <div style="font-family:var(--fh);font-size:.92rem;font-weight:700;color:var(--ink);margin-bottom:11px">Recent Registrations</div>
+        <div id="dashActivity"></div>
+      </div>
+      <button onclick="exportData()" style="width:100%;padding:13px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border:none;border-radius:100px;font-size:.73rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;box-shadow:0 5px 16px rgba(102,126,234,.32)">📤 Export All Data (JSON)</button>
+    </div>
+  </div>
+</div>
+
+<script>
+'use strict';
+
+/* ══ DB ENGINE ══ */
+const DB={
+  get(k){try{return JSON.parse(localStorage.getItem('ss_'+k))}catch(e){return null}},
+  set(k,v){try{localStorage.setItem('ss_'+k,JSON.stringify(v));return true}catch(e){return false}},
+  push(k,item){const a=DB.all(k);a.push(item);DB.set(k,a);return item},
+  all(k){try{return JSON.parse(localStorage.getItem('ss_'+k))||[]}catch(e){return[]}},
+  delWhere(k,fn){DB.set(k,DB.all(k).filter(x=>!fn(x)))},
+  updateWhere(k,fn,patch){DB.set(k,DB.all(k).map(x=>fn(x)?{...x,...patch}:x))}
+};
+
+
+/* ══ XSS PROTECTION ══ */
+function esc(s){
+  if(s==null)return'';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+/* ══ ADMIN CREDENTIALS ══ */
+const ADMIN={mobile:'9999536699',mpin:'1960',name:'Nair'};
+
+/* ══ RATES ══ */
+const DEF_RATE={g24:7200,g22:6600,g18:5400,silver:85};
+let RATE={...DEF_RATE};
+
+function loadRates(){
+  const s=DB.get('rates');
+  if(s&&s.g24){RATE={g24:s.g24,g22:s.g22,g18:s.g18,silver:s.silver};updateAllRateDisplays();}
+}
+function saveRates(){
+  const g24=+document.getElementById('admin24k').value;
+  const g22=+document.getElementById('admin22k').value;
+  const g18=+document.getElementById('admin18k').value;
+  const sv=+document.getElementById('adminSilver').value;
+  if(!g24||!g22||!g18||!sv){showToast('⚠️ Enter valid rates for all metals');return;}
+  if(g24<1000||g22<1000||g18<1000){showToast('⚠️ Gold rates seem too low — check values');return;}
+  RATE={g24,g22,g18,silver:sv};
+  DB.set('rates',{...RATE,updatedAt:new Date().toISOString(),updatedBy:ADMIN.name});
+  updateAllRateDisplays();
+  const when=new Date().toLocaleString('en-IN',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+  document.getElementById('lastRateUpdate').textContent='✅ Last updated: '+when+' by '+ADMIN.name;
+  showToast('✅ Gold rates updated instantly across the entire app!');
+}
+function updateAllRateDisplays(){
+  // Home cards
+  stTxt('home24k','₹'+fmt(RATE.g24));stTxt('home22k','₹'+fmt(RATE.g22));
+  stTxt('home18k','₹'+fmt(RATE.g18));stTxt('homeSilver','₹'+RATE.silver);
+  // Ticker primary
+  stTxt('tick24k','₹'+fmt(RATE.g24)+'/g');stTxt('tick22k','₹'+fmt(RATE.g22)+'/g');
+  stTxt('tick18k','₹'+fmt(RATE.g18)+'/g');stTxt('tickSilver','₹'+RATE.silver+'/g');
+  // Ticker duplicate
+  document.querySelectorAll('.tdp24k').forEach(e=>e.textContent='₹'+fmt(RATE.g24)+'/g');
+  document.querySelectorAll('.tdp22k').forEach(e=>e.textContent='₹'+fmt(RATE.g22)+'/g');
+  document.querySelectorAll('.tdp18k').forEach(e=>e.textContent='₹'+fmt(RATE.g18)+'/g');
+  document.querySelectorAll('.tdpSilver').forEach(e=>e.textContent='₹'+RATE.silver+'/g');
+  // Admin inputs
+  const el=id=>document.getElementById(id);
+  if(el('admin24k')) el('admin24k').value=RATE.g24;
+  if(el('admin22k')) el('admin22k').value=RATE.g22;
+  if(el('admin18k')) el('admin18k').value=RATE.g18;
+  if(el('adminSilver')) el('adminSilver').value=RATE.silver;
+  // Products if visible
+  if(document.getElementById('screen-collections').classList.contains('active')) renderProds(currentFilter);
+  // SV rate field default
+  const svR=document.getElementById('svRate');
+  if(svR&&!svR.dataset.touched) svR.value=RATE.g22;
+  // Rate note
+  const saved=DB.get('rates');
+  if(saved&&saved.updatedAt){
+    const d=new Date(saved.updatedAt).toLocaleString('en-IN',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
+    const el2=document.getElementById('lastRateUpdate');
+    if(el2) el2.textContent='✅ Last updated: '+d+' by '+(saved.updatedBy||'Admin');
+  }
+}
+function stTxt(id,v){const e=document.getElementById(id);if(e)e.textContent=v;}
+function fmt(n){return n.toLocaleString('en-IN');}
+
+/* ══ AUTH ══ */
+let currentUser=null;
+let pinBuf={set:'',login:'',admin:'',newpin:''};
+let confirmPin='',regData={};
+
+function hashPin(p){return btoa('ss'+p+'nair');}
+
+function showLoginStep(step){
+  ['register','setpin','login-mpin','forgot','forgot-found','newpin'].forEach(s=>{
+    const el=document.getElementById('step-'+s);
+    if(el) el.style.display='none';
+  });
+  const target=document.getElementById('step-'+step);
+  if(target) target.style.display='block';
+  pinBuf={set:'',login:'',admin:''};
+  confirmPin='';
+  updateDots('set',0);updateDots('login',0);
+  ['regErr','setPinErr','loginErr'].forEach(id=>{
+    const e=document.getElementById(id);if(e) e.classList.remove('show');
+  });
+}
+
+function regStep1(){
+  const name=(document.getElementById('regName').value||'').trim();
+  const phone=(document.getElementById('regPhone').value||'').trim();
+  const errEl=document.getElementById('regErr');
+  const showErr=m=>{errEl.textContent=m;errEl.classList.add('show');};
+  if(!name||name.length<2){showErr('Please enter your full name');return;}
+  if(!/^[0-9]{10}$/.test(phone)){showErr('Enter valid 10-digit mobile number');return;}
+  const existing=DB.all('users').find(u=>u.mobile===phone);
+  if(existing){showErr('This mobile is already registered. Please login.');return;}
+  errEl.classList.remove('show');
+  regData={name,mobile:phone};
+  document.getElementById('setPinHint').textContent='Hi '+name.split(' ')[0]+'! Set a secret 4-digit MPIN to protect your account.';
+  document.getElementById('setPinLabel').textContent='Enter new MPIN';
+  showLoginStep('setpin');
+}
+
+function pinKey(mode,digit){
+  if((pinBuf[mode]||'').length>=4) return;
+  pinBuf[mode]=(pinBuf[mode]||'')+digit;
+  updateDots(mode,pinBuf[mode].length);
+  if(pinBuf[mode].length===4) setTimeout(()=>processPinDone(mode),160);
+}
+function pinDel(mode){
+  if((pinBuf[mode]||'').length>0){pinBuf[mode]=pinBuf[mode].slice(0,-1);updateDots(mode,pinBuf[mode].length);}
+}
+function updateDots(mode,count){
+  const map={set:'setPinDots',login:'loginPinDots',admin:'adminPinDots',newpin:'newPinDots'};
+  const c=document.getElementById(map[mode]);if(!c)return;
+  c.querySelectorAll('.mpin-dot').forEach((d,i)=>{d.classList.toggle('filled',i<count);d.classList.remove('error');});
+}
+function showPinErr(mode,msg){
+  const errMap={set:'setPinErr',login:'loginErr',admin:'adminLoginErr',newpin:'newPinErr'};
+  const dotMap={set:'setPinDots',login:'loginPinDots',admin:'adminPinDots',newpin:'newPinDots'};
+  const e=document.getElementById(errMap[mode]);
+  if(e){e.textContent=msg;e.classList.add('show');}
+  const dc=document.getElementById(dotMap[mode]);
+  if(dc) dc.querySelectorAll('.mpin-dot').forEach(d=>{d.classList.add('error');d.classList.remove('filled');});
+  setTimeout(()=>{pinBuf[mode]='';updateDots(mode,0);if(e)e.classList.remove('show');},1300);
+}
+
+function processPinDone(mode){
+  if(mode==='set'){
+    if(!confirmPin){
+      confirmPin=pinBuf.set;pinBuf.set='';updateDots('set',0);
+      document.getElementById('setPinLabel').textContent='Re-enter MPIN to confirm';
+    } else {
+      if(pinBuf.set===confirmPin){
+        const user={mobile:regData.mobile,name:regData.name,mpin:hashPin(pinBuf.set),createdAt:new Date().toISOString()};
+        DB.push('users',user);
+        DB.push('notifications',{type:'new_reg',name:user.name,mobile:user.mobile,at:new Date().toISOString()});
+        loginSuccess(user);
+      } else {
+        confirmPin='';showPinErr('set','MPIN mismatch. Try again.');
+      }
+    }
+  }
+  else if(mode==='login'){
+    const nameVal=(document.getElementById('loginName').value||'').trim();
+    if(!nameVal){pinBuf.login='';updateDots('login',0);showToast('⚠️ Enter your name first');return;}
+    const users=DB.all('users');
+    const match=users.find(u=>u.name.toLowerCase()===nameVal.toLowerCase()&&u.mpin===hashPin(pinBuf.login));
+    if(match) loginSuccess(match);
+    else showPinErr('login','Incorrect name or MPIN');
+  }
+  else if(mode==='admin'){
+    const mob=(document.getElementById('adminMobile').value||'').trim();
+    if(mob===ADMIN.mobile&&pinBuf.admin===ADMIN.mpin){
+      closeAdminLogin();openAdmin();
+    } else {
+      showPinErr('admin','Invalid admin credentials');
+    }
+  }
+  else if(mode==='newpin'){
+    if(!newPinConfirm){
+      newPinConfirm=pinBuf.newpin;pinBuf.newpin='';updateDots('newpin',0);
+      document.getElementById('newPinLabel').textContent='Re-enter new MPIN to confirm';
+    } else {
+      if(pinBuf.newpin===newPinConfirm){
+        // Save new MPIN, clear temp flag
+        DB.updateWhere('users',u=>u.mobile===currentUser.mobile,{mpin:hashPin(pinBuf.newpin),tempMpin:false});
+        currentUser.tempMpin=false;
+        document.getElementById('loginScreen').classList.add('gone');
+        showToast('✅ New MPIN set successfully!');
+        updateUserUI();
+      } else {
+        newPinConfirm='';
+        showPinErr('newpin','MPIN mismatch. Try again.');
+      }
+    }
+  }
+}
+
+function loginSuccess(user){
+  currentUser=user;
+  DB.set('session',{mobile:user.mobile,name:user.name,loginAt:Date.now()});
+  // Temp MPIN check — force user to set new MPIN
+  if(user.tempMpin===true){
+    newPinConfirm='';pinBuf.newpin='';updateDots('newpin',0);
+    document.getElementById('newPinLabel').textContent='Enter new MPIN';
+    showLoginStep('newpin');
+    showToast('⚠️ Temp MPIN detected — set your new MPIN below');
+    return; // Don't hide login screen yet
+  }
+  document.getElementById('loginScreen').classList.add('gone');
+  updateUserUI();
+  showToast('✅ Welcome, '+user.name.split(' ')[0]+'!');
+}
+function logout(){
+  closeProfile();
+  DB.set('session',null);currentUser=null;
+  pinBuf={set:'',login:'',admin:''};confirmPin='';
+  document.getElementById('loginName').value='';
+  document.getElementById('loginScreen').classList.remove('gone');
+  const users=DB.all('users');
+  showLoginStep(users.length>0?'login-mpin':'register');
+  showToast('👋 Logged out');
+}
+function updateUserUI(){
+  if(!currentUser) return;
+  const init=(currentUser.name||'?')[0].toUpperCase();
+  ['userAvatarBtn','profileAv'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=init;});
+  const pn=document.getElementById('profileName');if(pn)pn.textContent=currentUser.name;
+  const pm=document.getElementById('profileMobile');if(pm)pm.textContent='📱 '+currentUser.mobile;
+  const ps=document.getElementById('profileSince');
+  if(ps&&currentUser.createdAt) ps.textContent='Member since '+new Date(currentUser.createdAt).toLocaleDateString('en-IN',{day:'2-digit',month:'long',year:'numeric'});
+}
+
+/* ══ PRODUCTS ══ */
+const PRODUCTS=[
+  {id:1,name:'Bridal Necklace Set',cat:'necklace',purity:'22K',wt:15.5,mc:15,sc:0,wastage:2,huid:'AB2847',pieces:1,rt:4.9,badge:'featured',img:'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=800&fit=crop&q=80',desc:'22K gold bridal necklace with intricate temple work. South Indian craftsmanship at its finest.'},
+  {id:2,name:'Diamond Solitaire Earrings',cat:'earring',purity:'18K',wt:3.2,mc:15,sc:28000,wastage:0,huid:'CD5921',pieces:2,rt:5.0,badge:'new',img:'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&h=800&fit=crop&q=80',desc:'GIA-certified 0.5ct SI1 diamonds in 18K white gold. Elegant and timeless.'},
+  {id:3,name:'22K Gold Bangles (6 pcs)',cat:'bangle',purity:'22K',wt:42,mc:10,sc:0,wastage:1,huid:'EF3309',pieces:6,rt:4.8,badge:'',img:'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=800&fit=crop&q=80',desc:'Set of 6 bangles in size 2/8. Traditional 22K gold with classic design.'},
+  {id:4,name:'Kerala Temple Jewellery',cat:'temple',purity:'22K',wt:28,mc:22,sc:6000,wastage:2,huid:'GH7743',pieces:1,rt:4.9,badge:'featured',img:'https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&h=800&fit=crop&q=80',desc:'Authentic temple jewellery from South Indian master craftsmen. Ruby & emerald stones.'},
+  {id:5,name:'22K Gold Chain & Pendant',cat:'necklace',purity:'22K',wt:12,mc:10,sc:0,wastage:1,huid:'IJ1156',pieces:1,rt:4.7,badge:'',img:'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&h=800&fit=crop&q=80',desc:'Delicate 22K rope chain with matching pendant. Everyday elegance.'},
+  {id:6,name:'Diamond Engagement Ring',cat:'ring',purity:'18K',wt:5.8,mc:18,sc:52000,wastage:0,huid:'KL8834',pieces:1,rt:5.0,badge:'new',img:'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&h=800&fit=crop&q=80',desc:'IGI-certified 0.75ct VS2 solitaire in 18K gold. The perfect symbol of love.'},
+  {id:7,name:'Antique Gold Jhumka Earrings',cat:'earring',purity:'22K',wt:8.2,mc:20,sc:2000,wastage:1,huid:'MN2210',pieces:2,rt:4.8,badge:'',img:'https://images.unsplash.com/photo-1585128119109-5f5c4f01e2b2?w=600&h=800&fit=crop&q=80',desc:'Hand-crafted antique jhumkas with traditional stone work.'},
+  {id:8,name:'22K Kada Set',cat:'bangle',purity:'22K',wt:38,mc:12,sc:0,wastage:1,huid:'OP4487',pieces:2,rt:4.6,badge:'',img:'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&h=800&fit=crop&q=80',desc:'Pair of heavy 22K gold kada bangles. Bold, traditional, statement-making.'}
+];
+const SCHEMES=[
+  {id:'nidhi',full:'NIDHI — No Making Charges',months:13,bonus:'Zero making charges at maturity',tags:['No making charges','13 equal instalments','BIS HUID jewellery','Pay ₹1,000+ monthly'],calc:(m,n)=>({inv:m*n,bonus:m*1.5,total:m*n+m*1.5})},
+  {id:'mine',full:'MINE — 2 Month Bonus EMI',months:20,bonus:'2 bonus months added free',tags:['2 extra months bonus','Pay 20 get 22 months','Flexible amount'],calc:(m,n)=>({inv:m*n,bonus:m*2,total:m*n+m*2})},
+  {id:'golden_harvest',full:'Golden Harvest — 70% EMI Bonus',months:6,bonus:'70% of one EMI as bonus',tags:['6 month scheme','70% bonus EMI','Min ₹5,000'],calc:(m,n)=>({inv:m*n,bonus:m*0.7,total:m*n+m*0.7})},
+  {id:'suvarna_varsha',full:'Suvarna Varsha — Gold Accumulation',months:null,bonus:'Accumulate gold at daily rates',tags:['Any amount, any day','Withdraw grams anytime','Flexible'],calc:null},
+  {id:'solitaire',full:'Solitaire Diamond — 3 Free EMIs',months:9,bonus:'3 free EMIs for diamond jewellery',tags:['3 bonus EMIs','9 months','GIA/IGI certified'],calc:(m,n)=>({inv:m*n,bonus:m*3,total:m*n+m*3})}
+];
+
+/* ══ STATE ══ */
+let cart=[],currentProd=null,selectedSlot=null;
+let svBalance=0,svRows=[];
+let currentScreen='home',currentFilter='all';
+let apptFilter='all';
+
+/* ══ PRICING ══ */
+function calcPrice(p){
+  var rateMap={'24K':RATE.g24,'22K':RATE.g22,'18K':RATE.g18};
+  var r=rateMap[p.purity]||RATE.g22;
+  var gv=r*p.wt,mc=gv*(p.mc/100),wst=gv*((p.wastage||0)/100);
+  var sub=gv+mc+wst+(p.sc||0),hm=45*(p.pieces||1);
+  return Math.round(sub+hm+(sub+hm)*0.03);
+}
+function calcPriceR(p){
+  const rMap={'24K':RATE.g24,'22K':RATE.g22,'18K':RATE.g18};
+  return rMap[p.purity]||RATE.g22;
+}
+function priceBreakdown(p){
+  const r=calcPriceR(p);
+  const gv=Math.round(r*p.wt),mc=Math.round(gv*(p.mc/100)),wst=Math.round(gv*((p.wastage||0)/100));
+  const hm=45*(p.pieces||1),sub=gv+mc+wst+(p.sc||0),gst=Math.round((sub+hm)*0.03);
+  const rows=[[`Gold (${p.wt}g × ₹${fmt(r)})`,`₹${fmt(gv)}`],[`Making (${p.mc}%)`,`₹${fmt(mc)}`]];
+  if(wst>0) rows.push([`Wastage (${p.wastage}%)`,`₹${fmt(wst)}`]);
+  if(p.sc>0) rows.push(['Stone Value',`₹${fmt(p.sc)}`]);
+  rows.push([`Hallmarking`,`₹${hm}`],[`GST (3%)`,`₹${fmt(gst)}`],[`Total`,`₹${fmt(Math.round(sub+hm+gst))}`]);
+  return rows;
+}
+function starsHtml(r,on,off){return Array.from({length:5},(_,i)=>`<span class="${i<Math.round(r)?on:off}">★</span>`).join('');}
+const FBImg="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23f5edd8' width='300' height='400'/%3E%3Ctext x='150' y='205' text-anchor='middle' font-size='13' fill='%23b09a78' font-family='sans-serif'%3EImage unavailable%3C/text%3E%3C/svg%3E";
+
+/* ══ PRODUCTS RENDER ══ */
+function renderProds(filter){
+  currentFilter=filter||'all';
+  const grid=document.getElementById('prodGrid');if(!grid)return;
+  const list=currentFilter==='all'?PRODUCTS:PRODUCTS.filter(p=>p.cat===currentFilter);
+  if(!list.length){grid.innerHTML='<p style="grid-column:1/-1;text-align:center;padding:40px;color:var(--muted);font-size:.84rem">No products in this category.</p>';return;}
+  grid.innerHTML=list.map(p=>{
+    const price=calcPrice(p);
+    const bdg=(p.badge==='featured'?'<span class="bdg bdg-f">✦ Featured</span>':p.badge==='new'?'<span class="bdg bdg-n">● New</span>':'')+`<span class="bdg bdg-h">✓ ${p.huid}</span>`;
+    return `<div class="prod-card" role="listitem" onclick="openModal(${p.id})" tabindex="0" aria-label="${p.name}, ₹${fmt(price)}">
+      <div class="prod-img"><img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.src='${FBImg}'" width="300" height="368">
+        <div class="prod-overlay"></div>
+        <div class="prod-badges">${bdg}</div>
+        <div class="prod-quick">
+          <button class="qbtn" onclick="event.stopPropagation();addToCart(${p.id})" aria-label="Add to wishlist">🛒</button>
+          <button class="qbtn" onclick="event.stopPropagation();shareProduct(${p.id})" aria-label="Share">🔗</button>
+        </div>
+        <div class="prod-info">
+          <div class="prod-cat">${p.cat}</div>
+          <div class="prod-name">${p.name}</div>
+          <div class="prod-meta">${p.purity} · ${p.wt}g · ${p.huid}</div>
+          <div class="prod-row">
+            <div><div class="prod-price">₹${fmt(price)}<small>incl. GST</small></div><div style="display:flex;gap:1px">${starsHtml(p.rt,'s-on','s-off')}</div></div>
+            <button class="prod-add-btn" onclick="event.stopPropagation();addToCart(${p.id})">+ Cart</button>
+          </div>
+        </div>
+      </div></div>`;
+  }).join('');
+  requestAnimationFrame(checkReveal);
+}
+function filterProds(btn,cat){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');renderProds(cat);
+}
+
+/* ══ MODAL ══ */
+function openModal(id){
+  const p=PRODUCTS.find(x=>x.id===id);if(!p)return;
+  currentProd=p;
+  const price=calcPrice(p);
+  document.getElementById('modalImg').src=p.img;
+  document.getElementById('modalImg').alt=p.name;
+  document.getElementById('modalCat').textContent=p.cat;
+  document.getElementById('modalName').textContent=p.name;
+  document.getElementById('modalDesc').textContent=p.desc;
+  document.getElementById('modalStars').innerHTML=starsHtml(p.rt,'ms-on','ms-off');
+  document.getElementById('modalPrice').innerHTML=`₹${fmt(price)}<small> incl. 3% GST</small>`;
+  document.getElementById('priceBreakdown').innerHTML=priceBreakdown(p).map(([l,v])=>`<div class="pb-row"><span>${l}</span><span>${v}</span></div>`).join('');
+  document.getElementById('huidText').textContent=`BIS HUID Certified · Code: ${p.huid} · Verify on BIS Care app`;
+  document.getElementById('modalOverlay').classList.add('open');
+  document.getElementById('modalSheet').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('modalOverlay').classList.remove('open');
+  const ms=document.getElementById('modalSheet');
+  ms.classList.remove('open');ms.style.transform='';ms.style.transition='';
+  document.body.style.overflow='';currentProd=null;
+}
+function addToCartFromModal(){if(currentProd){addToCart(currentProd.id);closeModal();}}
+function inquireOnWA(){
+  if(!currentProd)return;
+  const price=calcPrice(currentProd);
+  const msg=`Hi Southern Star! Interested in ${currentProd.name} (${currentProd.purity}, ${currentProd.wt}g, HUID: ${currentProd.huid}). Approx ₹${fmt(price)}. Please share details!`;
+  window.open(`https://wa.me/919999536699?text=${encodeURIComponent(msg)}`,'_blank','noopener');
+}
+function shareProduct(id){
+  const p=PRODUCTS.find(x=>x.id===id);if(!p)return;
+  const price=calcPrice(p);
+  const txt=`Check out ${p.name} at Southern Star Jewellery — ${p.purity}, ${p.wt}g, HUID: ${p.huid} — ₹${fmt(price)} incl. GST. southernjewellers.in`;
+  if(navigator.share) navigator.share({title:p.name,text:txt,url:'https://www.southernjewellers.in'}).catch(()=>{});
+  else{navigator.clipboard?navigator.clipboard.writeText(txt).then(()=>showToast('🔗 Link copied!')):showToast('Share: '+txt.substring(0,50)+'...');}
+}
+
+/* ══ CART ══ */
+function addToCart(id){
+  const p=PRODUCTS.find(x=>x.id===id);if(!p)return;
+  if(cart.find(c=>c.id===id)){showToast('Already in wishlist! 🛒');return;}
+  cart.push({...p,addedPrice:calcPrice(p)});
+  updateCartUI();showToast(`✦ ${p.name} added to wishlist!`);
+  const b=document.getElementById('cartBadge');b.classList.add('bump');setTimeout(()=>b.classList.remove('bump'),600);
+}
+function removeFromCart(id){cart=cart.filter(c=>c.id!==id);updateCartUI();showToast('Item removed');}
+function updateCartUI(){
+  const count=cart.length;
+  document.getElementById('cartBadge').textContent=count;
+  const itemsEl=document.getElementById('cartItems');
+  const footEl=document.getElementById('cartFooter');
+  if(!count){itemsEl.innerHTML='<div class="cart-empty"><div class="ce-icon">🛒</div><p>Your cart is empty.</p></div>';footEl.style.display='none';return;}
+  footEl.style.display='block';
+  let total=0;
+  itemsEl.innerHTML=cart.map(p=>{total+=p.addedPrice;return `<div class="cart-item"><div class="ci-img"><img src="${p.img}" alt="${p.name}" onerror="this.src='${FBImg}'" loading="lazy"></div><div class="ci-body"><div class="ci-name">${p.name}</div><div class="ci-meta">${p.purity} · ${p.wt}g · ${p.huid}</div><div class="ci-price">₹${fmt(p.addedPrice)}</div></div><button class="ci-rm" onclick="removeFromCart(${p.id})" aria-label="Remove">🗑️</button></div>`;}).join('');
+  document.getElementById('cartTotal').textContent='₹'+fmt(total);
+}
+function openCart(){document.getElementById('cartOverlay').classList.add('open');document.getElementById('cartDrawer').classList.add('open');document.body.style.overflow='hidden';}
+function closeCart(){document.getElementById('cartOverlay').classList.remove('open');document.getElementById('cartDrawer').classList.remove('open');document.body.style.overflow='';}
+function goToAppt(){closeCart();showScreen('appointment');}
+
+/* ══ NAVIGATION ══ */
+function showScreen(name){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  const t=document.getElementById('screen-'+name);
+  if(t){t.classList.add('active');window.scrollTo({top:0,behavior:'instant'});}
+  document.querySelectorAll('.bn-item').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-current','false');});
+  const bn=document.getElementById('bn-'+name);
+  if(bn){bn.classList.add('active');bn.setAttribute('aria-current','page');}
+  currentScreen=name;
+  if(name==='collections') renderProds(currentFilter);
+  if(name==='schemes') renderSchemes();
+  requestAnimationFrame(checkReveal);
+}
+
+/* ══ SCHEMES ══ */
+function renderSchemes(){
+  const list=document.getElementById('schList');if(!list)return;
+  if(list.children.length) return;
+  list.innerHTML=SCHEMES.map(s=>`
+    <div class="sch-item reveal" role="listitem" tabindex="0" onclick="toggleScheme('${s.id}',this)" onkeydown="if(event.key==='Enter')toggleScheme('${s.id}',this)" aria-expanded="false">
+      <div><div class="sch-name">${s.full}</div><div class="sch-desc">${s.bonus}</div></div>
+      <span class="sch-arr">›</span>
+    </div>
+    <div class="sch-detail" id="sd-${s.id}">
+      <div class="sd-tags">${(s.tags||[]).map(t=>`<span class="sd-tag">✓ ${t}</span>`).join('')}</div>
+      ${s.months?`<p style="font-size:.7rem;color:var(--muted)">Duration: <strong>${s.months} months</strong></p>`:'<p style="font-size:.7rem;color:var(--muted)">Duration: <strong>Flexible — anytime</strong></p>'}
+      <button class="calc-btn" style="margin-top:9px;font-size:.66rem;padding:11px" onclick="selectScheme('${s.id}')">📊 Calculate Returns →</button>
+    </div>`).join('');
+  requestAnimationFrame(checkReveal);
+}
+function toggleScheme(id,el){
+  const isOpen=el.classList.contains('active');
+  document.querySelectorAll('.sch-item').forEach(i=>{i.classList.remove('active');i.setAttribute('aria-expanded','false');});
+  document.querySelectorAll('.sch-detail').forEach(d=>d.classList.remove('show'));
+  if(!isOpen){
+    el.classList.add('active');el.setAttribute('aria-expanded','true');
+    const det=document.getElementById('sd-'+id);if(det)det.classList.add('show');
+  }
+}
+function selectScheme(id){
+  document.getElementById('calcScheme').value=id;onSchChange();
+  document.querySelector('.calc-card').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function onSchChange(){
+  const v=document.getElementById('calcScheme').value;
+  const isSV=v==='suvarna_varsha';
+  document.getElementById('regularCalcFields').style.display=isSV?'none':'block';
+  document.getElementById('svCalcSection').style.display=isSV?'block':'none';
+  if(!isSV){const s=SCHEMES.find(x=>x.id===v);if(s&&s.months)document.getElementById('calcDur').value=s.months;}
+  const cr=document.getElementById('calcRes');if(cr)cr.classList.remove('show');
+}
+function runCalc(){
+  const v=document.getElementById('calcScheme').value;
+  const s=SCHEMES.find(x=>x.id===v);if(!s||!s.calc)return;
+  const m=parseFloat(document.getElementById('calcMonthly').value)||0;
+  const n=parseInt(document.getElementById('calcDur').value)||0;
+  if(m<1000){showToast('⚠️ Minimum instalment is ₹1,000');return;}
+  const r=s.calc(m,n);
+  document.getElementById('rInv').textContent='₹'+fmt(Math.round(r.inv));
+  document.getElementById('rBonus').textContent='₹'+fmt(Math.round(r.bonus));
+  document.getElementById('rTotal').textContent='₹'+fmt(Math.round(r.total));
+  document.getElementById('rGrams').textContent=(r.total/RATE.g22).toFixed(3)+'g';
+  document.getElementById('calcRes').classList.add('show');
+}
+
+/* ══ SUVARNA VARSHA ══ */
+document.addEventListener('DOMContentLoaded',()=>{
+  const sr=document.getElementById('svRate');
+  if(sr) sr.addEventListener('input',()=>sr.dataset.touched='1');
+});
+function svAdd(){
+  const rate=parseFloat(document.getElementById('svRate').value)||0;
+  const amt=parseFloat(document.getElementById('svAmt').value)||0;
+  if(!rate||!amt||amt<1){showToast('⚠️ Enter valid rate and amount');return;}
+  const grams=amt/rate;
+  svBalance+=grams;
+  const row={date:new Date().toLocaleDateString('en-IN'),rate:rate,paid:amt,added:grams,withdrawn:0,balance:svBalance};
+  svRows.push(row);svRenderTable();
+  document.getElementById('svAmt').value='';showToast(`✅ ${grams.toFixed(4)}g gold added`);
+}
+function svToggleW(){const p=document.getElementById('svWPanel');p.style.display=p.style.display==='none'?'block':'none';}
+function svWithdraw(){
+  const wg=parseFloat(document.getElementById('svWg').value)||0;
+  if(!wg||wg<=0){showToast('⚠️ Enter grams to withdraw');return;}
+  if(wg>svBalance){showToast('⚠️ Insufficient gold balance');return;}
+  svBalance-=wg;
+  const row={date:new Date().toLocaleDateString('en-IN'),rate:RATE.g22,paid:0,added:0,withdrawn:wg,balance:svBalance};
+  svRows.push(row);svRenderTable();
+  document.getElementById('svWg').value='';
+  document.getElementById('svWPanel').style.display='none';
+  showToast(`✅ ${wg.toFixed(4)}g withdrawn`);
+}
+function svClear(){svBalance=0;svRows=[];svRenderTable();showToast('Cleared');}
+function svRenderTable(){
+  const tb=document.getElementById('svBody');if(!tb)return;
+  if(!svRows.length){tb.innerHTML='<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:16px;font-size:.7rem">Add your first payment above ↑</td></tr>';return;}
+  tb.innerHTML=svRows.map(r=>`<tr><td>${r.date}</td><td>₹${fmt(r.rate)}</td><td>${r.paid?'₹'+fmt(Math.round(r.paid)):'—'}</td><td style="color:var(--up)">${r.added?'+'+r.added.toFixed(4):'—'}</td><td style="color:var(--dn)">${r.withdrawn?'-'+r.withdrawn.toFixed(4):'—'}</td><td style="font-weight:700">${r.balance.toFixed(4)}g</td></tr>`).join('');
+  document.getElementById('svBalDisplay').textContent='Balance: '+svBalance.toFixed(4)+'g (worth approx ₹'+fmt(Math.round(svBalance*RATE.g22))+ ' at today\'s 22K rate)';
+}
+
+/* ══ APPOINTMENT ══ */
+function initSlots(){
+  const grid=document.getElementById('slotsGrid');if(!grid)return;
+  const slots=['11:00 AM','11:30 AM','12:00 PM','12:30 PM','01:00 PM','02:00 PM','03:00 PM','04:00 PM','05:00 PM','06:00 PM','07:00 PM'];
+  grid.innerHTML=slots.map(s=>`<button type="button" class="slot-btn" onclick="selectSlot(this,'${s}')">${s}</button>`).join('');
+}
+function selectSlot(btn,time){
+  document.querySelectorAll('.slot-btn').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');selectedSlot=time;
+}
+function submitAppt(e){
+  e.preventDefault();
+  if(document.getElementById('_hp').value)return;
+  const name=(document.getElementById('aName').value||'').trim();
+  const phone=(document.getElementById('aPhone').value||'').trim();
+  const branch=document.getElementById('aBranch').value;
+  const date=document.getElementById('aDate').value;
+  const purpose=document.getElementById('aPurpose').value;
+  const budget=document.getElementById('aBudget').value;
+  const notes=(document.getElementById('aNotes').value||'').trim();
+  if(!name||!phone||!branch||!date||!selectedSlot){showToast('⚠️ Please fill all required fields and select a time slot');return;}
+  if(!/^[0-9]{10}$/.test(phone)){showToast('⚠️ Enter valid 10-digit mobile number');return;}
+  const appt={id:'appt_'+Date.now(),name,phone,branch,date,time:selectedSlot,purpose,budget:budget||'Not specified',notes,status:'pending',createdAt:new Date().toISOString(),createdBy:currentUser?.name||'Guest'};
+  DB.push('appointments',appt);
+  const msg=`🙏 Hi Southern Star Jewellery!\n\nI'd like to book an appointment:\n\n👤 Name: ${name}\n📱 Mobile: ${phone}\n🏪 Showroom: ${branch}\n📅 Date: ${date}\n⏰ Time: ${selectedSlot}\n🎯 Purpose: ${purpose}\n💰 Budget: ${budget||'Not specified'}${notes?'\n📝 Notes: '+notes:''}\n\nPlease confirm. Thank you!`;
+  window.open(`https://wa.me/919999536699?text=${encodeURIComponent(msg)}`,'_blank','noopener');
+  document.getElementById('apptForm').reset();selectedSlot=null;
+  document.querySelectorAll('.slot-btn').forEach(b=>b.classList.remove('sel'));
+  showToast('✅ Appointment details sent via WhatsApp!');
+}
+
+/* ══ PROFILE ══ */
+function openProfile(){document.getElementById('profileOverlay').classList.add('open');document.getElementById('profileSheet').classList.add('open');document.body.style.overflow='hidden';}
+function closeProfile(){document.getElementById('profileOverlay').classList.remove('open');document.getElementById('profileSheet').classList.remove('open');document.body.style.overflow='';}
+
+/* ══ ADMIN LOGIN ══ */
+function openAdminLogin(){document.getElementById('adminLoginOverlay').classList.add('open');document.getElementById('adminLoginSheet').classList.add('open');document.body.style.overflow='hidden';}
+function closeAdminLogin(){document.getElementById('adminLoginOverlay').classList.remove('open');document.getElementById('adminLoginSheet').classList.remove('open');document.body.style.overflow='';pinBuf.admin='';updateDots('admin',0);}
+
+/* ══ ADMIN PANEL ══ */
+function openAdmin(){
+  document.getElementById('adminScreen').classList.add('open');
+  document.body.style.overflow='hidden';
+  renderAdminDashboard();
+  const saved=DB.get('rates');
+  if(saved&&saved.updatedAt){
+    const d=new Date(saved.updatedAt).toLocaleString('en-IN',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
+    const el=document.getElementById('lastRateUpdate');
+    if(el) el.textContent='✅ Last updated: '+d+' by '+(saved.updatedBy||'Admin');
+  }
+  updateAllRateDisplays();
+}
+function closeAdmin(){document.getElementById('adminScreen').classList.remove('open');document.body.style.overflow='';}
+function switchAdmTab(btn,panel){
+  document.querySelectorAll('.adm-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.adm-panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('adm-'+panel).classList.add('active');
+  if(panel==='appointments') renderAppts();
+  else if(panel==='customers') renderCustomers();
+  else if(panel==='dashboard') renderAdminDashboard();
+}
+
+/* ══ APPOINTMENTS ADMIN ══ */
+let apptStatusFilter='all';
+function setApptFilter(el,filter){
+  document.querySelectorAll('#apptFilterRow .af-chip').forEach(c=>c.classList.remove('sel'));
+  el.classList.add('sel');apptStatusFilter=filter;renderAppts();
+}
+function renderAppts(){
+  const search=(document.getElementById('apptSearch')?.value||'').toLowerCase();
+  let appts=DB.all('appointments');
+  if(apptStatusFilter!=='all') appts=appts.filter(a=>a.status===apptStatusFilter);
+  if(search) appts=appts.filter(a=>(a.name+a.phone+a.branch).toLowerCase().includes(search));
+  appts.sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
+  const total=DB.all('appointments').length;
+  const pending=DB.all('appointments').filter(a=>a.status==='pending').length;
+  document.getElementById('apptStats').innerHTML=`<div class="adm-stat"><div class="adm-stat-v">${total}</div><div class="adm-stat-l">Total Appts</div></div><div class="adm-stat"><div class="adm-stat-v">${pending}</div><div class="adm-stat-l">Pending</div></div>`;
+  const list=document.getElementById('apptList');if(!list)return;
+  if(!appts.length){list.innerHTML='<div class="adm-empty">📅 No appointments found</div>';return;}
+  list.innerHTML=appts.map(a=>`
+    <div class="data-card">
+      <div class="dc-head" onclick="toggleDC(this)">
+        <div><div class="dc-name">${esc(a.name)}</div><div class="dc-sub">${esc(a.branch)} · ${esc(a.date)} ${esc(a.time)}</div></div>
+        <span class="dc-badge ${a.status==='confirmed'?'confirmed':'pending'}">${a.status}</span>
+      </div>
+      <div class="dc-body">
+        <div class="dc-row"><span class="dc-key">Phone</span><span class="dc-val">${esc(a.phone)}</span></div>
+        <div class="dc-row"><span class="dc-key">Purpose</span><span class="dc-val">${esc(a.purpose)}</span></div>
+        <div class="dc-row"><span class="dc-key">Budget</span><span class="dc-val">${esc(a.budget)}</span></div>
+        ${a.notes?`<div class="dc-row"><span class="dc-key">Notes</span><span class="dc-val">${esc(a.notes)}</span></div>`:''}
+        <div class="dc-row"><span class="dc-key">Booked by</span><span class="dc-val">${esc(a.createdBy||'Guest')} · ${new Date(a.createdAt).toLocaleString('en-IN',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'})}</span></div>
+        <div class="dc-actions">
+          <a class="dc-btn call" href="tel:+91${a.phone}">📞 Call</a>
+          <a class="dc-btn wa" href="https://wa.me/91${a.phone}?text=Hi+${encodeURIComponent(esc(a.name))}!+Your+appointment+at+Southern+Star+on+${encodeURIComponent(a.date)}+at+${encodeURIComponent(a.time)}+is+confirmed.+See+you+soon!" target="_blank" rel="noopener">💬 WhatsApp</a>
+          ${a.status==='pending'?`<button class="dc-btn mark" onclick="confirmAppt('${a.id}')">✅ Confirm</button>`:''}
+          <button class="dc-btn del" onclick="deleteAppt('${a.id}')">🗑 Delete</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+function confirmAppt(id){DB.updateWhere('appointments',a=>a.id===id,{status:'confirmed'});renderAppts();showToast('✅ Appointment confirmed');}
+function deleteAppt(id){if(!confirm('Delete this appointment?'))return;DB.delWhere('appointments',a=>a.id===id);renderAppts();showToast('Appointment deleted');}
+
+/* ══ CUSTOMERS ADMIN ══ */
+function renderCustomers(){
+  const search=(document.getElementById('custSearch')?.value||'').toLowerCase();
+  let users=DB.all('users');
+  if(search) users=users.filter(u=>(u.name+u.mobile).toLowerCase().includes(search));
+  users.sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
+  document.getElementById('custStats').innerHTML=`<div class="adm-stat"><div class="adm-stat-v">${DB.all('users').length}</div><div class="adm-stat-l">Registered</div></div><div class="adm-stat"><div class="adm-stat-v">${DB.all('appointments').length}</div><div class="adm-stat-l">Appointments</div></div>`;
+  const list=document.getElementById('custList');if(!list)return;
+  if(!users.length){list.innerHTML='<div class="adm-empty">👥 No registered customers yet</div>';return;}
+  list.innerHTML=users.map(u=>`
+    <div class="data-card">
+      <div class="dc-head" onclick="toggleDC(this)">
+        <div><div class="dc-name">${esc(u.name)}</div><div class="dc-sub">📱 ${esc(u.mobile)}</div></div>
+        <span class="dc-badge new-cust">Customer${u.tempMpin?'<span class="reset-req-badge">🔑 Temp MPIN</span>':''}</span>
+      </div>
+      <div class="dc-body">
+        <div class="dc-row"><span class="dc-key">Mobile</span><span class="dc-val">${esc(u.mobile)}</span></div>
+        <div class="dc-row"><span class="dc-key">Registered</span><span class="dc-val">${new Date(u.createdAt).toLocaleString('en-IN',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'})}</span></div>
+        <div class="dc-actions">
+          <a class="dc-btn call" href="tel:+91${u.mobile}">📞 Call</a>
+          <a class="dc-btn wa" href="https://wa.me/91${u.mobile}?text=Hi+${encodeURIComponent(esc(u.name))}!+Greetings+from+Southern+Star+Jewellery!" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <button class="dc-btn mark" onclick="openResetModal('${u.mobile}','${esc(u.name)}')">🔑 Reset MPIN</button>
+          <button class="dc-btn del" onclick="deleteCustomer('${u.mobile}')">🗑 Delete</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+function deleteCustomer(mobile){if(!confirm('Delete this customer?'))return;DB.delWhere('users',u=>u.mobile===mobile);renderCustomers();showToast('Customer deleted');}
+
+/* ══ DASHBOARD ══ */
+function renderAdminDashboard(){
+  const users=DB.all('users'),appts=DB.all('appointments'),notifs=DB.all('notifications');
+  const resetReqs=DB.all('reset_requests').filter(r=>r.status==='pending').length;
+  document.getElementById('dashStats').innerHTML=`<div class="adm-stat"><div class="adm-stat-v">${users.length}</div><div class="adm-stat-l">Customers</div></div><div class="adm-stat"><div class="adm-stat-v">${appts.length}</div><div class="adm-stat-l">Appointments</div></div><div class="adm-stat"><div class="adm-stat-v">${appts.filter(a=>a.status==='pending').length}</div><div class="adm-stat-l">Pending Appts</div></div><div class="adm-stat" style="grid-column:1/-1"><div class="adm-stat-v" style="${resetReqs>0?'color:var(--dn)':''}">${resetReqs}</div><div class="adm-stat-l">MPIN Reset Requests</div></div>`;
+  document.getElementById('dashRates').innerHTML=[
+    ['🥇 Gold 24K','₹'+fmt(RATE.g24)+'/g'],
+    ['🥈 Gold 22K','₹'+fmt(RATE.g22)+'/g'],
+    ['💛 Gold 18K','₹'+fmt(RATE.g18)+'/g'],
+    ['⚪ Silver','₹'+RATE.silver+'/g']
+  ].map(([k,v])=>`<div style="display:flex;justify-content:space-between;font-size:.74rem;padding:6px 0;border-bottom:1px solid var(--bdr)"><span style="color:var(--muted)">${k}</span><span style="font-family:var(--fd);font-weight:700;color:var(--gold-d)">${v}</span></div>`).join('');
+  const recent=[...users].sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt)).slice(0,5);
+  document.getElementById('dashActivity').innerHTML=recent.length?recent.map(u=>`<div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--bdr);font-size:.72rem"><div><strong style="color:var(--ink)">${esc(u.name)}</strong><br><span style="color:var(--muted)">📱 ${esc(u.mobile)}</span></div><span style="color:var(--muted);font-size:.62rem">${new Date(u.createdAt).toLocaleDateString('en-IN',{day:'2-digit',month:'short'})}</span></div>`).join(''):'<div class="adm-empty" style="padding:20px">No customers yet</div>';
+}
+function exportData(){
+  const data={rates:{...RATE,updatedAt:DB.get('rates')?.updatedAt},users:DB.all('users').map(u=>({name:u.name,mobile:u.mobile,createdAt:u.createdAt,tempMpin:u.tempMpin||false})),appointments:DB.all('appointments'),resetRequests:DB.all('reset_requests'),exportedAt:new Date().toISOString()};
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=url;a.download='SouthernStar_Data_'+new Date().toISOString().slice(0,10)+'.json';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);
+  showToast('📤 Data exported successfully!');
+}
+function toggleDC(head){const body=head.nextElementSibling;body.classList.toggle('open');}
+
+/* ══ TOAST ══ */
+let toastTimer=null;
+function showToast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  if(toastTimer)clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>t.classList.remove('show'),2800);
+}
+
+/* ══ REVEAL ANIMATION ══ */
+function checkReveal(){
+  document.querySelectorAll('.reveal:not(.in)').forEach(el=>{
+    const r=el.getBoundingClientRect();
+    if(r.top<window.innerHeight-50) el.classList.add('in');
+  });
+}
+
+/* ══ INIT ══ */
+document.addEventListener('DOMContentLoaded',()=>{
+  // Dynamic header height measurement
+  function measureHeights(){
+    const tb=document.querySelector('.top-bar');
+    const tk=document.getElementById('ticker');
+    if(tk&&tb){
+      const tkH=tk.getBoundingClientRect().height;
+      const tbH=tb.getBoundingClientRect().height;
+      document.documentElement.style.setProperty('--ticker-h',Math.round(tkH)+'px');
+      document.documentElement.style.setProperty('--topbar-h',Math.round(tbH)+'px');
+      document.documentElement.style.setProperty('--header-h',Math.round(tkH+tbH)+'px');
+    }
+  }
+  measureHeights();
+  window.addEventListener('resize',measureHeights,{passive:true});
+
+  // Load saved rates
+  loadRates();
+
+  // Date field — set min to tomorrow, max 60 days
+  const dateEl=document.getElementById('aDate');
+  if(dateEl){
+    const tomorrow=new Date();tomorrow.setDate(tomorrow.getDate()+1);
+    const max=new Date();max.setDate(max.getDate()+60);
+    dateEl.min=tomorrow.toISOString().slice(0,10);
+    dateEl.max=max.toISOString().slice(0,10);
+  }
+  initSlots();
+
+  // Session check
+  const sess=DB.get('session');
+  if(sess&&sess.mobile){
+    const user=DB.all('users').find(u=>u.mobile===sess.mobile);
+    if(user){loginSuccess(user);}
+    else{document.getElementById('loginScreen').classList.remove('gone');showLoginStep(DB.all('users').length>0?'login-mpin':'register');}
+  } else {
+    document.getElementById('loginScreen').classList.remove('gone');
+    showLoginStep(DB.all('users').length>0?'login-mpin':'register');
+  }
+
+  // Splash
+  setTimeout(()=>{
+    const sp=document.getElementById('splash');
+    sp.classList.add('out');
+    setTimeout(()=>sp.classList.add('gone'),560);
+  },2200);
+
+  // Scroll reveal
+  window.addEventListener('scroll',checkReveal,{passive:true});
+  checkReveal();
+
+  // Back button
+  if(history.pushState){
+    history.pushState({s:'home'},'','');
+    window.addEventListener('popstate',()=>{
+      const ms=document.getElementById('modalSheet');
+      const cd=document.getElementById('cartDrawer');
+      const ps=document.getElementById('profileSheet');
+      if(ms.classList.contains('open')){closeModal();history.pushState({},'','');}
+      else if(cd.classList.contains('open')){closeCart();history.pushState({},'','');}
+      else if(ps.classList.contains('open')){closeProfile();history.pushState({},'','');}
+      else if(currentScreen!=='home'){showScreen('home');history.pushState({},'','');}
+      else{history.back();}
+    });
+  }
+
+  // Modal swipe to dismiss
+  const modal=document.getElementById('modalSheet');
+  let mTY=0;
+  modal.addEventListener('touchstart',e=>{mTY=e.touches[0].clientY;},{passive:true});
+  modal.addEventListener('touchmove',e=>{
+    const dy=e.touches[0].clientY-mTY;
+    if(dy>0&&modal.scrollTop===0){modal.style.transform=`translateY(${Math.min(dy*.38,55)}px)`;modal.style.transition='none';}
+  },{passive:true});
+  modal.addEventListener('touchend',e=>{
+    const dy=e.changedTouches[0].clientY-mTY;
+    modal.style.transition='';modal.style.transform='';
+    if(dy>80&&modal.scrollTop===0) closeModal();
+  },{passive:true});
+
+  // Install prompt
+  window.addEventListener('beforeinstallprompt',e=>{
+    e.preventDefault();
+    setTimeout(()=>{
+      let shown=false;
+      try{shown=!!localStorage.getItem('ss_install_shown');}catch(_){}
+      if(!shown){
+        showToast('📲 Add to Home Screen for best experience!');
+        try{localStorage.setItem('ss_install_shown','1');}catch(_){}
+      }
+    },6000);
+  });
+
+  console.log('%c✅ Southern Star v3 — Login · Admin Panel · Live Rates · Customer DB','color:#C8960C;font-weight:bold;font-size:13px');
+});
+
+/* ══ MPIN RECOVERY ══ */
+
+// State
+let newPinBuf = '';
+let newPinConfirm = '';
+let resetTargetUser = null;  // user being force-reset after temp login
+
+// Add 'newpin' mode to existing pinKey / pinDel / updateDots
+// We handle 'newpin' mode in processPinDone
+
+// Show forgot step with clean state
+function showForgotStep() {
+  showLoginStep('forgot');
+  document.getElementById('forgotMobile').value = '';
+  const e = document.getElementById('forgotErr');
+  if(e) e.classList.remove('show');
+}
+
+// Customer submits forgot-mpin request
+function submitForgotRequest() {
+  const mobile = (document.getElementById('forgotMobile').value || '').trim();
+  const errEl = document.getElementById('forgotErr');
+  const showErr = m => { errEl.textContent = m; errEl.classList.add('show'); };
+
+  if (!/^[0-9]{10}$/.test(mobile)) { showErr('Enter valid 10-digit mobile number'); return; }
+
+  const users = DB.all('users');
+  const found = users.find(u => u.mobile === mobile);
+
+  if (!found) {
+    showErr('No account found with this mobile. Please register.');
+    return;
+  }
+
+  // Log reset request
+  DB.push('reset_requests', {
+    id: 'rr_' + Date.now(),
+    mobile: found.mobile,
+    name: found.name,
+    requestedAt: new Date().toISOString(),
+    status: 'pending'
+  });
+
+  errEl.classList.remove('show');
+  showLoginStep('forgot-found');
+}
+
+// Check if user logged in with temp MPIN → force new MPIN setup
+function checkTempMpinLogin(user) {
+  return user.tempMpin === true;
+}
+
+// ── ADMIN: Open reset MPIN modal ──
+function openResetModal(mobile, name) {
+  document.getElementById('resetTargetMobile').value = mobile;
+  document.getElementById('resetModalTitle').textContent = 'Reset MPIN — ' + name;
+  document.getElementById('resetModalSub').textContent = 'Set a temporary MPIN. Customer must change it on next login.';
+  document.getElementById('resetModalContent').style.display = 'block';
+  document.getElementById('resetSuccessBox').style.display = 'none';
+  document.getElementById('customTempPin').value = '';
+  document.getElementById('resetModalOverlay').classList.add('open');
+  document.getElementById('resetModal').classList.add('open');
+}
+function closeResetModal() {
+  document.getElementById('resetModalOverlay').classList.remove('open');
+  document.getElementById('resetModal').classList.remove('open');
+}
+function setCustomTempMpin() {
+  const pin = (document.getElementById('customTempPin').value || '').trim();
+  if (!/^[0-9]{4}$/.test(pin)) { showToast('⚠️ Enter exactly 4 digits'); return; }
+  setTempMpin(pin);
+}
+function setTempMpin(pin) {
+  const mobile = document.getElementById('resetTargetMobile').value;
+  if (!mobile) return;
+
+  // Update user record: set tempMpin flag + new hashed pin
+  DB.updateWhere('users',
+    u => u.mobile === mobile,
+    { mpin: hashPin(pin), tempMpin: true }
+  );
+
+  // Mark reset requests as resolved
+  DB.updateWhere('reset_requests',
+    r => r.mobile === mobile && r.status === 'pending',
+    { status: 'resolved', resolvedAt: new Date().toISOString() }
+  );
+
+  // Show success
+  document.getElementById('displayedTempPin').textContent = pin;
+  document.getElementById('resetModalContent').style.display = 'none';
+  document.getElementById('resetSuccessBox').style.display = 'block';
+
+  // Refresh customer list
+  renderCustomers();
+  renderAdminDashboard();
+  showToast('✅ Temp MPIN set for customer');
+}
+
+// ── RESET REQUESTS count for admin badge ──
+function getPendingResetCount() {
+  return DB.all('reset_requests').filter(r => r.status === 'pending').length;
+}
+
+</script>
+
+<!-- ADMIN RESET MPIN MODAL -->
+<div class="adm-reset-modal-overlay" id="resetModalOverlay" onclick="closeResetModal()"></div>
+<div class="adm-reset-modal" id="resetModal" role="dialog" aria-modal="true" aria-label="Reset Customer MPIN">
+  <div style="width:38px;height:4px;background:var(--bdr-m);border-radius:2px;margin:10px auto 0"></div>
+  <div class="adm-reset-title" id="resetModalTitle">Reset MPIN</div>
+  <div class="adm-reset-sub" id="resetModalSub">Set a temporary MPIN for this customer</div>
+  <input type="hidden" id="resetTargetMobile">
+  <div id="resetModalContent">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:12px">
+      <button class="login-btn" style="font-size:.72rem;padding:13px;border-radius:12px" onclick="setTempMpin('0000')">Set Temp: <strong>0000</strong></button>
+      <button class="login-btn" style="font-size:.72rem;padding:13px;border-radius:12px;background:linear-gradient(135deg,var(--burg),var(--burg-l));color:#fff;box-shadow:0 5px 16px rgba(78,14,34,.28)" onclick="setTempMpin('1234')">Set Temp: <strong>1234</strong></button>
+    </div>
+    <div style="margin-bottom:12px">
+      <label class="lf-lbl" style="margin-bottom:6px;display:block">Or enter custom 4-digit MPIN</label>
+      <div style="display:flex;gap:8px">
+        <input class="lf-inp" id="customTempPin" type="tel" inputmode="numeric" maxlength="4" placeholder="e.g. 5678" style="flex:1;font-size:1.1rem;letter-spacing:.3em;text-align:center;font-weight:700">
+        <button class="login-btn" style="width:auto;padding:13px 18px;font-size:.72rem;white-space:nowrap" onclick="setCustomTempMpin()">Set →</button>
+      </div>
+    </div>
+    <p style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.65;margin-bottom:8px">After setting, tell the customer their temp MPIN in person or over the phone. They'll be forced to set a new one on first login.</p>
+  </div>
+  <div id="resetSuccessBox" style="display:none">
+    <div class="reset-temp-box">
+      <div class="rt-label">Temporary MPIN Set</div>
+      <div class="rt-pin" id="displayedTempPin">0000</div>
+      <div class="rt-note">Share this with the customer. They must set a new MPIN on login.</div>
+    </div>
+    <button class="login-btn" style="margin-top:10px;font-size:.74rem" onclick="closeResetModal()">✓ Done</button>
+  </div>
+</div>
+
+</body>
+</html>
